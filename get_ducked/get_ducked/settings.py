@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
     'home',
+    'products',
 ]
 
 MIDDLEWARE = [
@@ -158,4 +159,4 @@ MEDIA_ROOT = (os.path.join(BASE_DIR, 'media'))
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-shellied-getducked-kzds2ep6qzx.ws-eu70.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-shellied-getducked-kzds2ep6qzx.ws-eu71.gitpod.io']
