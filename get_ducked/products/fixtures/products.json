@@ -150,7 +150,7 @@
            "category":2,
            "rating":3.0,
            "image_url":"https://m.media-amazon.com/images/I/41LeMrNkoqL._AC_SX425_.jpg",
-           "image":"family_ducks.png"
+           "image":"family_duck.png"
         }
      },
      {
@@ -163,7 +163,7 @@
            "price":15.99,
            "category":2,
            "rating":4.6,
-           "image_url":"https://m.media-amazon.com/images/I/71bgG9Y1w5L._AC_SX679_.jpg",
+           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81M-V0eW8aL._AC_SX466_.jpg",
            "image":"MP_advent_calendar_mini.png"
         }
      },
@@ -206,7 +206,7 @@
            "category":2,
            "rating":4.8,
            "image_url":"https://m.media-amazon.com/images/I/71KhnazdVdL._AC_SX425_.jpg",
-           "image":"MP_assorted_bobblehat_baby_ducks_12.png"
+           "image":"MP_bobblehat_baby_ducks_12.png"
         }
      },
      {
@@ -220,7 +220,7 @@
            "category":2,
            "rating":4.4,
            "image_url":"https://m.media-amazon.com/images/I/71NaEM3hecL._AC_SX425_.jpg",
-           "image":"MP_breast_cancer_ducks.png"
+           "image":"MP_breast_cancer_ducks_24.png"
         }
      },
      {
@@ -234,7 +234,7 @@
            "category":2,
            "rating":4.4,
            "image_url":"https://m.media-amazon.com/images/I/61q7d+M6MDL._AC_SX425_.jpg",
-           "image":"DP1119201520340305C.jpg"
+           "image":"MP_cool_ducks_18.png"
         }
      },
      {
@@ -262,7 +262,7 @@
            "category":2,
            "rating":5.0,
            "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61V-Lf7TrvL._AC_SX679_.jpg",
-           "image":"MP_crazy_disco_ducks.png"
+           "image":"MP_crazy_disco_ducks_6.png"
         }
      },
      {
@@ -318,7 +318,7 @@
            "category":3,
            "rating":4.8,
            "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/Idontgiveaduckblack_1024x1024@2x.jpg?v=1648938205",
-           "image":"dont_give_a_a_duck_t_black.png"
+           "image":"dont_give_a_duck_t_black.png"
         }
      },
      {

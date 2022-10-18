@@ -29,10 +29,17 @@ body {
     width: fit-content;
 }
 
+.df-background {
+   background-color: rgba(153, 143, 138, 0.93)
+}
+
 .nav-container {
     background-color: #998f8a;
 }
 
+.search {
+    background-color: #998f8a;
+}
 .explore-now-button,
 .btn-black:hover,
 .btn-black:active,
@@ -63,7 +70,7 @@ body {
 
 /* -------------------------------------MEDIA QUERIES */
 /* Slightly larger container on xl screens */
-@media (min-width: 1200p) {
+@media (min-width: 1200px) {
     .container {
         max-width: 80%;
     }
@@ -81,5 +88,16 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top when navbar is collapsed on mobile */
+
+@media (max-width:991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+    body {
+        height: calc(100vh - 116px);
     }
 }
