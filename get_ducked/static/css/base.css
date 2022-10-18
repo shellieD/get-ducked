@@ -29,6 +29,10 @@ body {
     width: fit-content;
 }
 
+.nav-container {
+    background-color: #998f8a;
+}
+
 .explore-now-button,
 .btn-black:hover,
 .btn-black:active,
