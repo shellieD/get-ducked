@@ -17,9 +17,9 @@
                 Rubber Ducks
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="individual-duck-link">
-                <a href="" class="dropdown-item">Individual Ducks</a>
-                <a href="" class="dropdown-item">Multipack Ducks</a>
-                <a href="" class="dropdown-item">All Ducks</a>
+                <a href="{% url 'products' %}?category=individual_ducks,new_arrivals,clearance" class="dropdown-item">Individual Ducks</a>
+                <a href="{% url 'products' %}?category=multipack_ducks" class="dropdown-item">Multipack Ducks</a>
+                <a href="{% url 'products' %}?category=individual_ducks,multipack_ducks,new_arrivals,clearance" class="dropdown-item">All Ducks</a>
             </div>
         </li>
 
@@ -28,9 +28,9 @@
                 Clothing and Jewellery
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Clothing</a>
-                <a href="" class="dropdown-item">Jewellery</a>
-                <a href="" class="dropdown-item">All Clothing and Jewellery</a>
+                <a href="{% url 'products' %}?category=clothing" class="dropdown-item">Clothing</a>
+                <a href="{% url 'products' %}?category=jewellery" class="dropdown-item">Jewellery</a>
+                <a href="{% url 'products' %}?category=clothing,jewellery" class="dropdown-item">All Clothing and Jewellery</a>
             </div>
         </li>
 
@@ -39,9 +39,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
