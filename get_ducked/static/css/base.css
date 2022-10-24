@@ -57,6 +57,21 @@ body {
     color: #ffc107;
 }
 
+.btn-outline-black {
+    background:#ffc107;
+    color: black !important;
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color:#ffc107 !important;
+}
+
+
+
 .explore-now-button:hover,
 .explore-now-button:active,
 .explore-now-button:focus {
