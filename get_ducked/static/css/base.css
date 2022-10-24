@@ -68,6 +68,12 @@ body {
     border: 1px solid black !important;
 }
 
+a.category-badge > span.badge:hover {
+    background: black !important;
+    color: #ffc107 !important;
+}
+
+
 /* -------------------------------------MEDIA QUERIES */
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
