@@ -40,6 +40,10 @@ body {
 .search {
     background-color: #998f8a;
 }
+
+.delivery-banner {
+    background-color: black !important;
+}
 .explore-now-button,
 .btn-black:hover,
 .btn-black:active,
