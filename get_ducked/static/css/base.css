@@ -19,6 +19,19 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+
+}
+
+.nav-link:visited {
+    color: black !important;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+a.text-primary:focus,
+a.text-primary:hover {
+    color: #ffc107 !important;
+    transition: ease .3s;
 }
 
 .logo-font {
@@ -30,7 +43,7 @@ body {
 }
 
 .df-background {
-   background-color: rgba(153, 143, 138, 0.93)
+    background-color: rgba(153, 143, 138, 0.93)
 }
 
 .nav-container {
@@ -44,21 +57,22 @@ body {
 .delivery-banner {
     background-color: black !important;
 }
+
 .explore-now-button,
 .btn-black:hover,
 .btn-black:active,
-.btn-black:focus  {
+.btn-black:focus {
     background: #ffc107;
     color: black;
 }
 
-.btn-black { 
+.btn-black {
     background: black;
     color: #ffc107;
 }
 
 .btn-outline-black {
-    background:#ffc107;
+    background: #ffc107;
     color: black !important;
     border: 1px solid black;
 }
@@ -67,7 +81,7 @@ body {
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: black;
-    color:#ffc107 !important;
+    color: #ffc107 !important;
 }
 
 
@@ -79,15 +93,15 @@ body {
     color: #ffc107;
 }
 
-.text-black{
-    color:#000 !important;
-} 
+.text-black {
+    color: #000 !important;
+}
 
 .border-black {
     border: 1px solid black !important;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: black !important;
     color: #ffc107 !important;
 }
@@ -133,6 +147,7 @@ a.category-badge > span.badge:hover {
     .header-container {
         padding-top: 116px;
     }
+
     body {
         height: calc(100vh - 116px);
     }
