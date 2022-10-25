@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: url('/media/bubble_duck.jpg') no-repeat center center fixed;
+    background: url('/media/background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh-164px);
     color: black;
@@ -42,16 +42,16 @@ a.text-primary:hover {
     width: fit-content;
 }
 
-.df-background {
-    background-color: rgba(153, 143, 138, 0.93)
-}
+/* .df-background {
+    background-color: rgba(153, 143, 138, 0.93);
+} */
 
 .nav-container {
-    background-color: #998f8a;
+    background-color: #dc2b28;
 }
 
 .search {
-    background-color: #998f8a;
+    background-color: #dc2b28
 }
 
 .delivery-banner {
@@ -116,6 +116,10 @@ a.category-badge>span.badge:hover {
 
 .btt-link {
     cursor: pointer;
+}
+
+table {
+    background-color: white;
 }
 
 /* -------------------------------------MEDIA QUERIES */
