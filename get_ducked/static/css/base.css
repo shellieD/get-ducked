@@ -101,6 +101,20 @@ a.text-primary:hover {
     border: 1px solid black !important;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+.rating {
+    color: #dc8d28
+}
+
 a.category-badge>span.badge:hover {
     background: black !important;
     color: #ffc107 !important;
