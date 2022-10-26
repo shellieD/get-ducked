@@ -42,10 +42,6 @@ a.text-primary:hover {
     width: fit-content;
 }
 
-/* .df-background {
-    background-color: rgba(153, 143, 138, 0.93);
-} */
-
 .nav-container {
     background-color: #dc2b28;
 }
@@ -128,7 +124,9 @@ a.category-badge>span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.remove-link,
+.update-link {
     cursor: pointer;
 }
 
