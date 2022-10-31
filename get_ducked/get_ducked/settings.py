@@ -175,5 +175,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = ['https://8000-shellied-getducked-kzds2ep6qzx.ws-eu73.gitpod.io']
 
 FREE_DELIVERY_THRESHOLD = 15
-
 STANDARD_DELIVERY_PERCENTAGE = 5
+
+# Stripe
+STRIPE_CURRENCY = 'GBP'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
