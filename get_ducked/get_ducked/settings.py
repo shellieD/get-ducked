@@ -42,9 +42,9 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.apple',
-    'allauth.socialaccount.providers.facebook',
-    'allauth.socialaccount.providers.google',
+    # 'allauth.socialaccount.providers.apple',
+    # 'allauth.socialaccount.providers.facebook',
+    # 'allauth.socialaccount.providers.google',
     'crispy_forms',
     'home',
     'products',
@@ -173,7 +173,7 @@ MEDIA_ROOT = (os.path.join(BASE_DIR, 'media'))
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-shellied-getducked-kzds2ep6qzx.ws-eu73.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-shellied-getducked-kzds2ep6qzx.ws-eu74.gitpod.io']
 
 FREE_DELIVERY_THRESHOLD = 15
 STANDARD_DELIVERY_PERCENTAGE = 10
