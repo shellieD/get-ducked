@@ -1,3 +1,4 @@
 Background-image:  Photo by Snack Toronto: https://www.pexels.com/photo/yellow-steel-bathtub-1630344/
 
 BUG - unable to close toasts with close button.... need to figure out a workaround.
+BUG - Order not being created by webhook handler when website breaks (PI create/charged and succeeds) - solved - gitpod workspace url had changed, so the webhook endpoint needed to be updated in Stripe.
