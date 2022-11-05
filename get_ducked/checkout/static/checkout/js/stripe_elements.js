@@ -63,7 +63,7 @@ form.addEventListener('submit', function (event) {
     const postData = {
         'csrfmiddlewaretoken': csrfToken,
         'client_secret': clientSecret,
-        'saveInfo': saveInfo,
+        'save_info': saveInfo,
     };
     const url = '/checkout/cache_checkout_data/';
 
@@ -113,7 +113,7 @@ form.addEventListener('submit', function (event) {
                 $('#submit-button').attr('disabled', false);
             } else {
                 if (result.paymentIntent.status === 'succeeded') {
-                    form.submit();
+                    // form.submit();
                 }
             }
         });
