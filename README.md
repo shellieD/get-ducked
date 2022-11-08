@@ -9,6 +9,10 @@ SOOOO MUCH!!!
 
 - 'Are you sure you want to delete { product.name }' popup to prevent accidental product deletion
 - Update Jira Board
+ - Set up real confirmation emails
+ - use live keys on stripe
+ - testing?
+
 
 
 For Readme:-
