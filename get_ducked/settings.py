@@ -201,7 +201,7 @@ if 'USE_AWS' in os.environ:
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CSRF_TRUSTED_ORIGINS = ['https://8000-shellied-getducked-kzds2ep6qzx.ws-eu74.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-shellied-getducked-kzds2ep6qzx.ws-eu75.gitpod.io']
 
 FREE_DELIVERY_THRESHOLD = 15
 STANDARD_DELIVERY_PERCENTAGE = 10

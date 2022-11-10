@@ -1,7 +1,14 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+
+        </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -13,29 +20,35 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="rubber-duck-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="rubber-duck-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Rubber Ducks
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="individual-duck-link">
-                <a href="{% url 'products' %}?category=individual_ducks,new_arrivals,clearance" class="dropdown-item">Individual Ducks</a>
+                <a href="{% url 'products' %}?category=individual_ducks,new_arrivals,clearance"
+                    class="dropdown-item">Individual Ducks</a>
                 <a href="{% url 'products' %}?category=multipack_ducks" class="dropdown-item">Multipack Ducks</a>
-                <a href="{% url 'products' %}?category=individual_ducks,multipack_ducks,new_arrivals,clearance" class="dropdown-item">All Ducks</a>
+                <a href="{% url 'products' %}?category=individual_ducks,multipack_ducks,new_arrivals,clearance"
+                    class="dropdown-item">All Ducks</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Clothing and Jewellery
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?category=clothing" class="dropdown-item">Clothing</a>
                 <a href="{% url 'products' %}?category=jewellery" class="dropdown-item">Jewellery</a>
-                <a href="{% url 'products' %}?category=clothing,jewellery" class="dropdown-item">All Clothing and Jewellery</a>
+                <a href="{% url 'products' %}?category=clothing,jewellery" class="dropdown-item">All Clothing and
+                    Jewellery</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
