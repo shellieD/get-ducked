@@ -1,7 +1,9 @@
 Background-image:  Photo by Snack Toronto: https://www.pexels.com/photo/yellow-steel-bathtub-1630344/
 
-BUG - unable to close toasts with close button.... need to figure out a workaround.
-BUG - Order not being created by webhook handler when website breaks (PI create/charged and succeeds) - solved - gitpod workspace url had changed, so the webhook endpoint needed to be updated in Stripe - GAHH!
+* BUG - unable to close toasts with close button.... need to figure out a workaround.
+* BUG - Order not being created by webhook handler when website breaks (PI create/charged and succeeds) - solved - gitpod workspace url had changed, so the webhook endpoint needed to be updated in Stripe - GAHH!
+* Hamburger icon on small screens not visible....
+* minus quantity button not disabling correctly.
 
 
 TO DO:
@@ -12,6 +14,12 @@ SOOOO MUCH!!!
  - Set up real confirmation emails
  - use live keys on stripe
  - testing?
+ - 404, 403 and 500 error pages
+ - Footer
+ - Subscribe to promotional emails (pop up discount code when subscribed? Add new field to checkout page for discount codes?)
+ - Ability to add/view product reviews
+ - Contact page?
+
 
 
 
