@@ -4,6 +4,7 @@ Background-image:  Photo by Snack Toronto: https://www.pexels.com/photo/yellow-s
 * BUG - Order not being created by webhook handler when website breaks (PI create/charged and succeeds) - solved - gitpod workspace url had changed, so the webhook endpoint needed to be updated in Stripe - GAHH!
 * Hamburger icon on small screens not visible....
 * minus quantity button not disabling correctly.
+* Unable to log in as admin on deployed site. (Usernames/passwords notrecognised.)
 
 
 TO DO:
@@ -11,10 +12,10 @@ SOOOO MUCH!!!
 
 - 'Are you sure you want to delete { product.name }' popup to prevent accidental product deletion
 - Update Jira Board
- - Set up real confirmation emails
- - use live keys on stripe
+ - Set up real confirmation emails - done
+ - use live keys on stripe ?
  - testing?
- - 404, 403 and 500 error pages
+ - 404, 403 and 500 error pages - wip
  - Footer
  - Subscribe to promotional emails (pop up discount code when subscribed? Add new field to checkout page for discount codes?)
  - Ability to add/view product reviews
