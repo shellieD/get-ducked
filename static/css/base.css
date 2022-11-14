@@ -134,6 +134,14 @@ table {
     background-color: white;
 }
 
+.error-text {
+    font-weight: 500;
+}
+
+.error-p {
+    font-size: 1.5rem;
+}
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0;
