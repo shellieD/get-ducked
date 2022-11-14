@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 
 def custom_403_error(request, exception):
-    """ 403 error view """
+    """ 403 error view - Forbidden """
     return render(request, 'errors/403.html', status=403)
 
 
@@ -11,6 +11,8 @@ def custom_404_error(request, exception):
     return render(request, "errors/404.html", status=404)
 
 
-def custom_500_error(request, exception):
+def custom_500_error(request):
     """ 500 error view """
-    return render(request, 'errors/500.html', status=500)
+    response = render(request, "errors/500.html")
+    response.status_code = 500
+    return response
