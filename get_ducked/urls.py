@@ -29,4 +29,6 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+handler403 = 'get_ducked.views.custom_403_error'
 handler404 = 'get_ducked.views.handler404'
+handler500 = 'get_ducked.views.custom_500_error'
