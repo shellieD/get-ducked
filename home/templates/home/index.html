@@ -25,4 +25,40 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="card rounded-5 home-page-card mb-2" style="width: 18rem;">
+                <a href="{% url 'products' %}?category=individual_ducks,multipack_ducks,new_arrivals,clearance">
+                    <div class="card-body">
+                        <h5 class="card-title text-black text-uppercase text-center">View our Rubber Ducks</h5>
+                    </div>
+                    <img src="https://get-ducked.s3.eu-west-2.amazonaws.com/media/astro_duck.png" class="card-img-top"
+                        alt="">
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card home-page-card mb-2" style="width: 18rem;">
+                <a href="{% url 'products' %}?category=jewellery">
+                    <div class="card-body">
+                        <h5 class="card-title text-black text-uppercase text-center">View our Jewellery</h5>
+                    </div>
+                    <img src="https://get-ducked.s3.eu-west-2.amazonaws.com/media/sparkle_duck_studs.png"
+                        class="card-img-top" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card home-page-card mb-2" style="width: 18rem;">
+                <a href="{% url 'products' %}?category=new_arrivals">
+                    <div class="card-body">
+                        <h5 class="card-title text-black text-uppercase text-center">View our New Arrivals</h5>
+                    </div>
+                    <img src="https://get-ducked.s3.eu-west-2.amazonaws.com/media/dj_duck.png" class="card-img-top"
+                        alt="">
+                </a>
+            </div>
+        </div>
+    </div>
     {% endblock %}
