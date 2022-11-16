@@ -339,70 +339,71 @@ input[name='q']::placeholder {
     p.mb-nav-hide {
         visibility: hidden;
     }
+}
 
-    /* Slightly larger container on xl screens */
-    @media (min-width: 1200px) {
-        .container {
-            max-width: 80%;
-        }
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
     }
 
-    /* fixed top navbar only on medium and up */
-    @media (min-width: 992px) {
-        .fixed-top-desktop-only {
-            position: fixed;
-            top: 0;
-            right: 0;
-            left: 0;
-            z-index: 1030;
-        }
+    .header-container {
+        padding-top: 164px;
+    }
+}
 
-        .header-container {
-            padding-top: 164px;
-        }
+/* pad the top when navbar is collapsed on mobile */
+
+@media (max-width:991px) {
+    .header-container {
+        padding-top: 116px;
     }
 
-    /* pad the top when navbar is collapsed on mobile */
-
-    @media (max-width:991px) {
-        .header-container {
-            padding-top: 116px;
-        }
-
-        body {
-            height: calc(100vh - 116px);
-        }
-
-        .display-4.logo-font.text-black {
-            font-size: 2rem;
-        }
-
-        .nav-link {
-            padding: 0.15rem;
-        }
-
-        .navbar-toggler {
-            padding: .6rem .6rem;
-            font-size: 1rem;
-        }
-
-        #delivery-banner h4 {
-            font-size: .9rem;
-        }
-
-        .btn.btn-outline-black.rounded-pill,
-        .btn.btn-black.rounded-pill {
-            padding: .375rem .375rem;
-        }
-
-        .btn.btn-outline-black.rounded-pill.btn-lg,
-        .btn.btn-black.rounded-pill.btn-lg {
-            padding: .375rem .375rem;
-            font-size: .75rem;
-        }
-
-        .increment-qty,
-        .decrement-qty {
-            padding: 0.25rem .5rem !important;
-        }
+    body {
+        height: calc(100vh - 116px);
     }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-pill,
+    .btn.btn-black.rounded-pill {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-pill.btn-lg,
+    .btn.btn-black.rounded-pill.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty,
+    .decrement-qty {
+        padding: 0.25rem .5rem !important;
+    }
+}
