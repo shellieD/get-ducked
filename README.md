@@ -138,7 +138,7 @@ I used [EightShapes Contrast Grid](https://contrast-grid.eightshapes.com) to ens
 
 ### Typography
 
-Only one font isused throughout the website, sourced from [Google Fonts](https://fonts.google.com/).  'Dosis' was used throughout for it's simple and sleek style and a combination of uppercase for headings and standard case for all other text was used to provide some differentiation.
+Only one font is used throughout the website, sourced from [Google Fonts](https://fonts.google.com/).  'Dosis' was used throughout for it's simple and sleek style and a combination of uppercase for headings and standard case for all other text was used to provide some differentiation.
 
 ### Imagery
 
@@ -148,7 +148,7 @@ All products were sourced from either Amazon, or were pulled from the website [s
 
 ![Background Image](docs/images/background.jpg)
 
-I also sourced a noimage file, in the event that the server cannot find the correct product imagea to show.  This was sourced via a google search. 
+I also sourced a noimage file, in the event that the server cannot find the correct product images to show.  This was sourced via a google search. 
 
 ![noimage](docs/images/noimage.png)
 
@@ -236,6 +236,8 @@ All testing and code validation information can be found in the separate [TESTIN
 * Code Institute's Slack Community.
 
 ## Deployment
+
+**HOSTING ON AWS**
 
 ### Deployment through Heroku
 

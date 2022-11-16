@@ -171,6 +171,11 @@ table {
     text-align: center;
 } */
 
+.footer-links {
+    list-style-type: none;
+    color: black !important;
+}
+
 /* Mailchimp */
 #mc_embed_signup {
     /* background: #fff; */

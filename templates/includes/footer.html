@@ -1,20 +1,3 @@
-<!--SOCIAL MEDIA LINKS-->
-<!-- <footer>
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <div class="col-12">
-                    <a class="text-black"
-                        href="https://www.privacypolicygenerator.info/live.php?token=BGSBFQzCpRTKHRl3ncveewkHj69C0CjA"
-                        target="_blank">Privacy Policy</a>
-                </div>
-                <div class="small text-center fst-italic">Created for Education Purposes 2022</div>
-            </div>
-        </div>
-    </div>
-
-</footer> -->
-
 <br>
 <br>
 <br>
@@ -22,22 +5,50 @@
 <br>
 <br>
 
-<footer class="container-wrapper">
+<section class="container-wrapper bg-white pt-2">
+
     <div class="container quotes-container content-container">
         <section class="footer">
             <div class="row">
                 <div class="col-12 page-header mb-4">
-                    <h2 class="text-uppercase">Stay in touch:</h2>
+                    <h3 class="text-uppercase">Stay in touch:</h3>
                     <hr class="block-divider block-divider--short">
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h3>Social</h3>
+                    <h4>Social</h4>
                     <p>Keep up to date with all our latest offers</p>
-                    <a class="text-black" href="https://www.facebook.com/profile.php?id=100087594170318"
+                    <a class="text-black d-block" href="https://www.facebook.com/profile.php?id=100087594170318"
                         target="_blank"><i class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
+                    <a class="text-black d-block" href="https://www.instagram.com" target="_blank"><i
+                            class="fab fa-instagram-square"></i> Find us on Instagram!</a>
+                    <hr>
+                    <div class="col-xs-12 col-md-6 text-black">
+                        <h6 class="text-uppercase">Categories</h6>
+                        <ul class="footer-links">
+                            <li><a class="text-black" href="{% url 'products' %}">All Products</a></li>
+                            <li class=""><a class="text-black"
+                                    href="{% url 'products' %}?category=individual_ducks,multipack_ducks,new_arrivals,clearance">All
+                                    Ducks</a></li>
+                            <li class="nav-item"><a class="text-black"
+                                    href="{% url 'products' %}?category=clothing,jewellery">Clothing
+                                    and Jewellery</a>
+                            </li>
+                            <li class="nav-item"><a class="text-black"
+                                    href="{% url 'products' %}?category=new_arrivals,clearance">Special Offers</a></li>
+                        </ul>
+                        <h6 class="text-uppercase">Important</h6>
+                        <ul class="footer-links">
+                            <li><a class="text-black" href="{% url 'contact' %}"> <i class="fas fa-envelope"> </i>
+                                    Contact us</a></li>
+                            <li><a class="text-black"
+                                    href="https://www.privacypolicygenerator.info/live.php?token=BGSBFQzCpRTKHRl3ncveewkHj69C0CjA"
+                                    target="_blank"><i class="fas fa-lock"> </i> Privacy Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="col-12 col-md-6">
                     <!-- Mailchimp signup form here -->
                     <!-- Begin Mailchimp Signup Form -->
@@ -84,4 +95,15 @@
                 </div>
             </div>
         </section>
-    </div> -->
+    </div>
+</section>
+<footer class="pt-2 pb-2 bg-danger">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+
+                <div class="small text-center fst-italic">Created for Education Purposes 2022</div>
+            </div>
+        </div>
+    </div>
+</footer>
