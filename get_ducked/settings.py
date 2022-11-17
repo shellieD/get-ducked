@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'reviews',
 ]
 
 MIDDLEWARE = [
@@ -203,7 +204,7 @@ if 'USE_AWS' in os.environ:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-shellied-getducked-kzds2ep6qzx.ws-eu74.gitpod.io'
+    'https://8000-shellied-getducked-kzds2ep6qzx.ws-eu75.gitpod.io'
 ]
 
 FREE_DELIVERY_THRESHOLD = 15

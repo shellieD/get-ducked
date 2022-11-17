@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock%}
+
+{% block content %}
+<div class="overlay contact-container"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Reviews</h2>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <h3 class="text-center mb-3">Let us know what you think...
+                </h3>
+
+            </div>
+        </div>
+        <hr>
+        <div class="container mb-2">
+            <div class="row">
+                <!-- review form -->
+                <br>
+                <div class="col-lg-6 contact-form text-left">
+                    <div class="row">
+                        <div class="col form-margin">
+                            <form action="{% url 'reviews' %}" method="POST">
+                                {% csrf_token %}
+                                {% for field in form %}
+                                {{ field | as_crispy_field}}
+                                {% endfor %}
+                                <div class="rate">
+                                    <input type="radio" name="rating" id="rating5" value="5" required>
+                                    <label for="rating5" title="5"></label>
+                                    <input type="radio" name="rating" id="rating4" value="4" required>
+                                    <label for="rating4" title="4"></label>
+                                    <input type="radio" name="rating" id="rating3" value="3" required>
+                                    <label for="rating3" title="3"></label>
+                                    <input type="radio" name="rating" id="rating2" value="2" required>
+                                    <label for="rating2" title="2"></label>
+                                    <input type="radio" name="rating" id="rating1" value="1" required>
+                                    <label for="rating1" title="1"></label>
+                                </div>
+                                <br>
+                                <input type="submit" value="Submit" class="btn btn-black rounded-pill">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+    {% block postloadjs %}
+    {{ block.super. }}
+
+    {% endblock %}
