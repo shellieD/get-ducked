@@ -1,11 +1,15 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.http import HttpResponseRedirect
 from profiles.models import UserProfile
 from django.core.validators import MaxValueValidator, MinValueValidator
+
+STATUS = ((0, "Draft"), (1, "Added"))
 
 
 class Review(models.Model):
     user = models.ForeignKey(
-        UserProfile,
+        User,
         on_delete=models.CASCADE,
         related_name="reviews"
     )
@@ -26,8 +30,8 @@ class Review(models.Model):
         validators=[MaxValueValidator(5), MinValueValidator(1)],
         null=False
     )
-    approved = models.BooleanField(default=False)
+    status = models.IntegerField(choices=STATUS, default=0)
     date_created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.subject
+        return self.title

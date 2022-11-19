@@ -272,6 +272,13 @@ label:hover~input:checked~label {
     overflow-y: auto;
 }
 
+/** ---------------------------------------------Reviews */
+
+.review-title {
+    font-size: 1.5rem;
+    background-color: #ffc107;
+}
+
 /** ---------------------------------------------Allauth form formatting */
 
 .allauth-form-inner-content p {

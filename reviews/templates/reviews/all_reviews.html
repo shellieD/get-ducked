@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock%}
+
+{% block content %}
+<div class="overlay contact-container"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Reviews</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center mb-3">See what our customers think...
+                </h3>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <a class="btn btn-black btn-lg rounded-pill" href="{% url 'add_review' %}" role="button">Add a Review </a>
+        </div>
+        <div class="container-fluid col-10 mt-3 left mb-2">
+            <div class="row">
+                <div class="col">
+                    {% for review in reviews %}
+                    <div class="card mb-5 text-center">
+                        <div class="card-header review-title">
+                            <strong>{{ review.title }}</strong>
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>
+                                    {{ review.review }}
+                                </p>
+                                <span class="text-warning">
+                                    {% if review.rating == 5 %}
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    {% elif review.rating == 4 %}
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-muted"></i>
+                                    {% else%}
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-muted"></i>
+                                    <i class="fas fa-star text-muted"></i>
+                                    {% endif %}
+                                </span>
+                                <footer class="blockquote-footer">Posted by: <cite
+                                        title="Source Title">{{ review.user }} {{ review.date_created }}</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super. }}
+
+{% endblock %}
