@@ -77,7 +77,7 @@ def product_detail(request, product_id):
         'product': product,
     }
 
-    return render(request, 'products/product_detail.html', context)
+    return render(request, 'product/product_detail.html', context)
 
 
 @login_required
@@ -154,19 +154,19 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 
-@login_required
-def add_to_wishlist(request, product_id):
-    product = get_object_or_404(Product, id=product_id)
-    if product.users_wishlist.filter(id=request.user.id).exists():
-        product.users_wishlist.remove(request.user)
-        messages.success(request, 'Product removed from your wishlist')
-    else:
-        product.users_wishlist.add(request.user)
-        messages.success(request, 'Product added to your wishlist')
-    return HttpResponseRedirect(reverse('product_detail', args=[product_id]))
+# @login_required
+# def add_to_wishlist(request, product_id):
+#     product = get_object_or_404(Product, id=product_id)
+#     if product.users_wishlist.filter(id=request.user.id).exists():
+#         product.users_wishlist.remove(request.user)
+#         messages.success(request, 'Product removed from your wishlist')
+#     else:
+#         product.users_wishlist.add(request.user)
+#         messages.success(request, 'Product added to your wishlist')
+#     return HttpResponseRedirect(reverse('product_detail', args=[product_id]))
 
 
-@login_required
-def wishlist(request):
-    products = Product.objects.filter(users_wishlist=request.user)
-    return render(request, {"wishlist": products})
+# @login_required
+# def wishlist(request):
+#     products = Product.objects.filter(users_wishlist=request.user)
+#     return render(request, {"wishlist": products})
