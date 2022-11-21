@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock%}
+
+<div class="overlay contact-container"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Approve Review</h2>
+        </div>
+    </div>
+
+    <div class="container-fluid col-8 left mb-2">
+        <div class="row">
+            <div class="col">
+                <div class="card mb-5 text-center">
+                    <div class="card-header review-title">
+                        <strong>Approve: "{{ review.title }}"</strong>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="">
+                            {% csrf_token %}
+                            <p>Are you sure you want to approve "{{ review.title }}"? Approving this review will make it
+                                visible
+                                to
+                                all users.</p>
+                            {{ form | crispy }}
+                            <input class="btn btn-black rounded-pill btn-lg" type="submit" value="Confirm">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

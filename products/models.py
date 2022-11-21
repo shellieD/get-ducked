@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -56,6 +57,11 @@ class Product(models.Model):
     )
     image = models.ImageField(
         null=True,
+        blank=True
+    )
+    users_wishlist = models.ManyToManyField(
+        User,
+        related_name="user_wishlist",
         blank=True
     )
 

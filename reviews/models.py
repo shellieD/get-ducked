@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
 from profiles.models import UserProfile
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django.utils.text import slugify
 
 STATUS = ((0, "Draft"), (1, "Added"))
 
@@ -12,6 +13,11 @@ class Review(models.Model):
         User,
         on_delete=models.CASCADE,
         related_name="reviews"
+    )
+    slug = models.SlugField(
+        max_length=200,
+        unique=True,
+        null=True,
     )
     title = models.CharField(
         default='Title',
@@ -33,5 +39,13 @@ class Review(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     date_created = models.DateTimeField(auto_now_add=True)
 
+
+    class Meta:
+        ordering = ['-date_created']
+
     def __str__(self):
         return self.title
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        super(Review, self).save(*args, **kwargs)

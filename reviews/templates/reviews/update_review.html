@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock%}
+
+{% if user.is_authenticated and user.id == review.author.id or user.is_superuser %}
+
+<div class="overlay contact-container"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Edit Reviews</h2>
+        </div>
+    </div>
+
+    <div class="container-fluid col-8 left mb-2">
+        <div class="row">
+            <div class="col">
+                <div class="card mb-5 text-center">
+                    <div class="card-header review-title">
+                        <strong>{{ review.title }}</strong>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" class="recipe-form">
+                            {% csrf_token %}
+                            {{ form.title | as_crispy_field}}
+                            {{ form.review | as_crispy_field}}
+                            <div class="rate">
+                                <input type="radio" name="rating" id="rating5" value="5" required>
+                                <label for="rating5" title="5"></label>
+                                <input type="radio" name="rating" id="rating4" value="4" required>
+                                <label for="rating4" title="4"></label>
+                                <input type="radio" name="rating" id="rating3" value="3" required>
+                                <label for="rating3" title="3"></label>
+                                <input type="radio" name="rating" id="rating2" value="2" required>
+                                <label for="rating2" title="2"></label>
+                                <input type="radio" name="rating" id="rating1" value="1" required>
+                                <label for="rating1" title="1"></label>
+                            </div>
+                            <div>
+                                <input class="btn btn-black btn-lg rounded-pill" type="submit" value="Update">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}

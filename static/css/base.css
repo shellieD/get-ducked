@@ -64,7 +64,6 @@ a.text-primary:hover {
     background-color: black !important;
 }
 
-.explore-now-button,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -167,6 +166,10 @@ table {
     background: url(https://get-ducked.s3.eu-west-2.amazonaws.com/media/bubble-duck.webp) no-repeat center center;
     background-size: cover;
     height: calc(100vh-164px);
+}
+
+.wishlist {
+    color: #dc2b28;
 }
 
 /** -------------------------------------------- Star Rating System */

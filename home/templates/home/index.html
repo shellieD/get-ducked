@@ -13,15 +13,17 @@
 <div class="container h-100 mt-2">
     <div class="row h-100">
         <div class="col my-auto">
-            <h2 class="display-4 logo-font text-black">
+            <h2 class="display-4 logo-font text-black text-center">
                 Get totally <strong>ducked-up</strong> with our extensive range of rubber ducks!
             </h2>
-            <div class="my-5">
-                <h4>
-                    <a href="{% url 'products' %}"
-                        class="explore-now-button btn btn-lg rounded-pill text-uppercase py-3">Take me on a duck
-                        hunt</a>
-                </h4>
+            <div class="my-5 text-center">
+
+                <a href="{% url 'products' %}" class="btn btn-black btn-lg rounded-pill text-uppercase py-3">
+                    Take me on a duck hunt</a>
+                <a href="{% url 'all_reviews' %}"
+                    class="explore-now-button btn btn-outline-black btn-lg rounded-pill text-uppercase py-3">
+                    See our customer reviews</a>
+
             </div>
         </div>
     </div>
