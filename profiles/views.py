@@ -5,6 +5,7 @@ from .models import UserProfile
 from .forms import UserProfileForm
 
 from checkout.models import Order
+from products.models import Product
 
 
 @login_required
@@ -25,12 +26,14 @@ def profile(request):
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
+    wishlist = Product.objects.filter(user_wishlist=request.user)
 
     template = 'profiles/profile.html'
     context = {
         'form': form,
         'orders': orders,
         'on_profile_page': True,
+        'wishlist': wishlist
     }
 
     return render(request, template, context)

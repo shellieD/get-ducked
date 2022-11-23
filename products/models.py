@@ -59,6 +59,11 @@ class Product(models.Model):
         null=True,
         blank=True
     )
+    user_wishlist = models.ManyToManyField(
+        User,
+        related_name="user_wishlist",
+        blank=True
+    )
 
     def __str__(self):
         return self.name

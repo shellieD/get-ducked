@@ -43,9 +43,6 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    # 'allauth.socialaccount.providers.apple',
-    # 'allauth.socialaccount.providers.facebook',
-    # 'allauth.socialaccount.providers.google',
     'crispy_forms',
     'storages',
     'home',
@@ -54,7 +51,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'reviews',
-    'wishlist',
+
 ]
 
 MIDDLEWARE = [
@@ -205,7 +202,7 @@ if 'USE_AWS' in os.environ:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-shellied-getducked-kzds2ep6qzx.ws-eu74.gitpod.io'
+    'https://8000-shellied-getducked-kzds2ep6qzx.ws-eu77.gitpod.io'
 ]
 
 FREE_DELIVERY_THRESHOLD = 15

@@ -39,7 +39,6 @@ class Review(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     date_created = models.DateTimeField(auto_now_add=True)
 
-
     class Meta:
         ordering = ['-date_created']
 

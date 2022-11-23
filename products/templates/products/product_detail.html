@@ -96,7 +96,8 @@
                             {% if request.user.is_authenticated %}
                             <div>
                                 <a class="text-black" href="{% url 'add_to_wishlist' product.id %}"><i
-                                        class="fas fa-heart wishlist" role="button"></i> Add to wishlist</a>
+                                        class="fas fa-heart wishlist" role="button"></i> Add to
+                                    wishlist</a>
                             </div>
                             {% endif %}
                             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-pill mt-5">

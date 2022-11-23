@@ -37,7 +37,7 @@
         </div>
         <div class="col-12 col-lg-6">
             <div>
-                <p class="text-muted">Order History</p>
+                <p class="text-muted h4">Order History</p>
                 <div class="order-history table-responsive">
                     <table class="table table-sm table-borerless">
                         <thead>
@@ -49,6 +49,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            {% if orders %}
                             {% for order in orders %}
                             <tr>
                                 <td>
@@ -70,33 +71,41 @@
                                 <td>{{ order.grand_total}}</td>
                             </tr>
                             {% endfor %}
+                            {% else %}
                         </tbody>
                     </table>
+
+                    No orders found
+                    {% endif %}
+
                 </div>
+                <hr>
             </div>
             <div>
-                <p>My Wishlist</p>
+                <p class="h4">My Wishlist</p>
                 <hr>
                 {% if wishlist %}
                 {% for item in wishlist %}
                 <div class="row">
                     <div class="col-2 mb-1">
-                        <a href="{% url 'product_detail' item.product.id %}">
-                            {% if item.product.image %}
-                            <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                        <a href="{% url 'product_detail' item.id %}">
+                            {% if item.image %}
+                            <img class="w-100" src="{{ item.image.url }}" alt="{{ item.name }}">
                             {% else %}
-                            <img class="w-100" src="{{ MEDIA_URL}}noimage.png" alt="{{ product.name }}">
+                            <img class="w-100" src="{{ MEDIA_URL}}noimage.png" alt="{{ item.name }}">
                             {% endif %}
                         </a>
                     </div>
                     <div class="col-7">
-                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                        <p class="my-0"><strong>{{ item.name }}</strong></p>
                     </div>
                     <div class="col-3 text-right">
-                        <p class="my-0 small text-muted">£{{ item.product.price}}</p>
+                        <p class="my-0 small text-muted">£{{ item.price}}</p>
                     </div>
-                    <div>
-                        <a class="text-black" href="{% url 'add_to_wishlist' product.id %}" role="button">Remove from
+                    <hr>
+                    <div class="p-3">
+                        <a class="text-black" href="{% url 'add_to_wishlist' item.id %}" role="button"><i
+                                class="fas fa-trash"> </i> Remove from
                             wishlist</a>
                     </div>
                 </div>
