@@ -314,7 +314,11 @@ Heroku will now build the app for you. Once it has completed the build process y
 
 ## Credits
 
-* As this was my first Django project, I took a lot of inspiration from th [Code Institute's](https://codeinstitute.net/) Boutique Ado walkthrough.  I took inspiration from the models, views and templates to get the skeleton of the project up and running.
+* As this was my first E-Commerce project, I took a lot of inspiration from th [Code Institute's](https://codeinstitute.net/) Boutique Ado walkthrough.  I took inspiration from the models, views and templates to get the skeleton of the project up and running.  I did also add my own custom models for Reviews and Contact and slightly customised the Product model to include a user wishlist.
+
+* Inspiration was taken from this [youtube tutorial](https://www.youtube.com/watch?v=OgA0TTKAtqQ) to create the wishlist functionality.
+
+* Inspiration was also taken from this [youtube tutorial](https://www.youtube.com/watch?v=Zkmu93lMLPs&t=0s) to create the reviews app.
 
 
 **NOTES FOR ME**

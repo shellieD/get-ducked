@@ -52,6 +52,10 @@ a.text-primary:hover {
     width: fit-content;
 }
 
+#main-nav {
+    font-size: 1.3rem;
+}
+
 .nav-container {
     background-color: #dc2b28;
 }
@@ -160,12 +164,17 @@ table {
 
 .home-page-card {
     min-height: 424px;
+    margin: auto;
 }
 
 .contact-container {
     background: url(https://get-ducked.s3.eu-west-2.amazonaws.com/media/bubble-duck.webp) no-repeat center center;
     background-size: cover;
     height: calc(100vh-164px);
+}
+
+#sort-selector {
+    min-width: 145px;
 }
 
 .wishlist {
