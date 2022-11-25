@@ -116,15 +116,21 @@ All functionality and development of this project were managed using Jira Softwa
 
 ### Flowchart
 
+****** TO DO (if i have time!) ******
+
 **FLOW CHART TO GO HERE** 
 
 ## Database Schema
+
+****** TO DO ******
 
 **DATABASE SCHEMA TO GO HERE**
 
 ## The Skeleton Plane
 
 ## Wireframes 
+
+****** TO DO ******
 
 I used [Balsamiq](https://balsamiq.cloud/) to create low fidelity wireframes which helped me to stay on track during the development process.
 
@@ -179,23 +185,48 @@ Each category has a drop-down menu and users can further filter/sort the product
 Users are afforded the same functionality on mobile browsers, but with a more compact nav bar using intuitive icons rather than text to save on screen real-estate and a handy pop-down menu to give the user further options.
 
 Mobile Nav Colllapsed:
+<br>
 ![Mobile Nav Collapsed](docs/images/mobile-nav-collapsed.png)
 <br>
+
 Mobile Nav Expanded:
+<br>
 ![Mobile Nav Expanded](docs/images/mobile-nav-expanded.png)
 
+There are also role-based permissions and the dropdown menu associated with 'My Account' reflects this:
 
+General users will see the below options:
 
+![General User Menu](docs/images/not-logged-in.png)
 
-On mobile browers:
+Registered and logged in users will see the following:
 
+![Logged in User Menu](docs/images/user-logged-in.png)
 
+and Admin will have options that allow them to manage the store's products and review, approve, edit or delete customer reviews:
+
+![Logged in as Admin](docs/images/admin-logged-in.png)
 
 ### Footer
 
+The footer appears on every page and gives users plenty of opportunities to connect with the store and includes links to:
+
+* Facebook
+* Instagram
+* Customer Reviews
+* Product Category Pages
+* Contact Page
+* Privacy Policy
+* Email Subscription Service
+
+
 ### Other Features
 
+*****TO DO*****
+
 ### Future Features/Development
+
+*****TO DO*****
 
 ## Testing
 
@@ -204,8 +235,8 @@ Testing has taken place continuously throughout the development of the website. 
 All testing and code validation information can be found in the separate [TESTING.md](TESTING.md) file
 
 * BUG - unable to close toasts with close button.... need to figure out a workaround - sporadic behaviour, sometimes works, sometimes doesn't
-* BUG - Order not being created by webhook handler when website breaks (PI create/charged and succeeds) - solved - gitpod workspace url had changed, so the webhook endpoint needed to be updated in Stripe - GAHH!
-* minus quantity button not disabling correctly.
+
+* BUG - Increment and decrement quantity buttons not disabling correctly on larger screens.  This is due to two quantity forms being rendered and one being hidden depending on the size of the screen. Unfortunately due to time constraints I was unable to fix this prior to submission as my focus had to be on including all functionality to match the assessment criteria.  This problem however, is not a breaking-bug... If the user selects a quantity of a product of any number below zero, then no items will be added to the bag.  It does however mean that users can add far more of a product to the bag than would be ideal, so this is something that will need to be rectified in the next sprint.
 
 ## Technologies Used
 
@@ -270,7 +301,7 @@ All testing and code validation information can be found in the separate [TESTIN
 
 ## Deployment
 
-**HOSTING ON AWS**
+**HOSTING ON AWS TO GO HERE**
 
 ### Deployment through Heroku
 
