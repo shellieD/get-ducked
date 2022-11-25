@@ -1,577 +1,576 @@
-[
-    {
-       "pk":1,
-       "model":"products.product",
-       "fields":{
-          "sku":"Y-13963",
-          "name":"Astro Duck",
-          "description":"Cosmically cool astronaut rubber duck.  Perfect for space enthusiasts or for when you want a totally spaced-out bath.  Astro-duck comes with a squeaker (so not for the faint-hearted!)",
-          "price":6.99,
-          "category":1,
-          "rating":4.6,
-          "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/105132_4fa44f6931054f1a9a8d_1024x1024@2x.jpg?v=1616511855",
-          "image":"astro_duck.png"
-       }
+[{
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "Y-13963",
+            "name": "Astro Duck",
+            "description": "Cosmically cool astronaut rubber duck.  Perfect for space enthusiasts or for when you want a totally spaced-out bath.  Astro-duck comes with a squeaker (so not for the faint-hearted!)",
+            "price": 6.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/105132_4fa44f6931054f1a9a8d_1024x1024@2x.jpg?v=1616511855",
+            "image": "astro_duck.webp"
+        }
     },
     {
-        "pk":2,
-        "model":"products.product",
-        "fields":{
-           "sku":"LI2172",
-           "name":"Ballerina Duck",
-           "description":"Gloriously graceful Prima Donna duck, wearing nothing else but her favourite pink tutu.",
-           "price":6.99,
-           "category":1,
-           "rating":4.6,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/lilalu-quietscheente-ballerina-F_1024x1024@2x.png?v=1616511109",
-           "image":"ballerina_duck.png"
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "LI2172",
+            "name": "Ballerina Duck",
+            "description": "Gloriously graceful Prima Donna duck, wearing nothing else but her favourite pink tutu.",
+            "price": 6.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/lilalu-quietscheente-ballerina-F_1024x1024@2x.png?v=1616511109",
+            "image": "ballerina_duck.webp"
         }
-     },
-     {
-        "pk":3,
-        "model":"products.product",
-        "fields":{
-           "sku":"LI2256",
-           "name":"Bartender Duck",
-           "description":"Whether a buddy, roommate or bartender of your choice - if someone serves you the right drink in all situations, provides you with an ear for worries and also offers advice - the Barkeeper rubber duck is the perfect thank you gift. And by the way this duck looks incredibly stylish with a bow tie.",
-           "price":6.99,
-           "category":1,
-           "rating":4.7,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/lilalu-quietscheente-barkeeper-rubber-duck-HR_1024x1024@2x.png?v=1610575745",
-           "image":"bartender_duck.png"
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "LI2256",
+            "name": "Bartender Duck",
+            "description": "Whether a buddy, roommate or bartender of your choice - if someone serves you the right drink in all situations, provides you with an ear for worries and also offers advice - the Barkeeper rubber duck is the perfect thank you gift. And by the way this duck looks incredibly stylish with a bow tie.",
+            "price": 6.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/lilalu-quietscheente-barkeeper-rubber-duck-HR_1024x1024@2x.png?v=1610575745",
+            "image": "bartender_duck.webp"
         }
-     },
-     {
-        "pk":4,
-        "model":"products.product",
-        "fields":{
-           "sku":"LI2255",
-           "name":"Beer Duck",
-           "description":"Gold glittering and with a crown cap on its head, we present the beer rubber duck, as usual, in premium design - so close to reality that one feels like having a refreshing hop drink! In combination with a delicious beer, a pub crawl or a beer tasting, this duck is a great gift for all friends of the art of brewing.",
-           "price":6.99,
-           "category":1,
-           "rating":3.0,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/lilalu-quietscheente-bier-beer-rubber-duck-HR_1024x1024@2x.png?v=1610575008",
-           "image":"beer_duck.png"
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "LI2255",
+            "name": "Beer Duck",
+            "description": "Gold glittering and with a crown cap on its head, we present the beer rubber duck, as usual, in premium design - so close to reality that one feels like having a refreshing hop drink! In combination with a delicious beer, a pub crawl or a beer tasting, this duck is a great gift for all friends of the art of brewing.",
+            "price": 6.99,
+            "category": 1,
+            "rating": 3.0,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/lilalu-quietscheente-bier-beer-rubber-duck-HR_1024x1024@2x.png?v=1610575008",
+            "image": "beer_duck.webp"
         }
-     },
-     {
-        "pk":5,
-        "model":"products.product",
-        "fields":{
-           "sku":"Y-13880",
-           "name":"President 'Donald' Duck'",
-           "description":"Make your bath great, with our squeaking President Donald Trump duck.",
-           "price":6.99,
-           "category":1,
-           "rating":5.0,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/104586_49a365e525e449af8b9f_1024x1024@2x.jpg?v=1616511860",
-           "image":"donald_duck.png"
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "Y-13880",
+            "name": "President 'Donald' Duck'",
+            "description": "Make your bath great, with our squeaking President Donald Trump duck.",
+            "price": 6.99,
+            "category": 1,
+            "rating": 5.0,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/104586_49a365e525e449af8b9f_1024x1024@2x.jpg?v=1616511860",
+            "image": "donald_duck.webp"
         }
-     },
-     {
-        "pk":6,
-        "model":"products.product",
-        "fields":{
-           "sku":"LI2260",
-           "name":"Gift Duck",
-           "description":"Birthday, graduation, wedding, new home, new job, baby... there are many occasions that want to be celebrated and given presents. With the lovingly designed gift rubber duck, giving becomes a little bit more beautiful and even the universal money gift gets an idea of personality!",
-           "price":6.99,
-           "category":1,
-           "rating":4.7,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/lilalu-quietscheente-geschenk-gift-rubber-duck-HR_1024x1024@2x.png?v=1616511045",
-           "image":"gift_duck.png"
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "LI2260",
+            "name": "Gift Duck",
+            "description": "Birthday, graduation, wedding, new home, new job, baby... there are many occasions that want to be celebrated and given presents. With the lovingly designed gift rubber duck, giving becomes a little bit more beautiful and even the universal money gift gets an idea of personality!",
+            "price": 6.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/lilalu-quietscheente-geschenk-gift-rubber-duck-HR_1024x1024@2x.png?v=1616511045",
+            "image": "gift_duck.webp"
         }
-     },
-     {
-        "pk":7,
-        "model":"products.product",
-        "fields":{
-           "sku":"LI1673",
-           "name":"Ladybird Duck",
-           "description":"A gorgeous rubber duck for ladybird lovers.  How many spots will yours have? ",
-           "price": 6.99,
-           "category":1,
-           "rating":4.4,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/LI1673-2_1024x1024@2x.jpeg?v=1616511391",
-           "image":"ladybird_duck.png"
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "LI1673",
+            "name": "Ladybird Duck",
+            "description": "A gorgeous rubber duck for ladybird lovers.  How many spots will yours have? ",
+            "price": 6.99,
+            "category": 1,
+            "rating": 4.4,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/LI1673-2_1024x1024@2x.jpeg?v=1616511391",
+            "image": "ladybird_duck.webp"
         }
-     },
-     {
-        "pk":8,
-        "model":"products.product",
-        "fields":{
-           "sku":"LI1945",
-           "name":"Safari Lion Duck",
-           "description":"The King of Rubber Ducks: The Lion Duck. With its mighty mane he is a proud duck that stands out from your collection and would like presented at the bathtubs safari! Great gift for wildlife fans, Jungle Kings and safari riders.",
-           "price": 6.99,
-           "category":1,
-           "rating":4.5,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/LI1945-2_1024x1024@2x.jpeg?v=1616511285",
-           "image":"lion_duck.png"
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "LI1945",
+            "name": "Safari Lion Duck",
+            "description": "The King of Rubber Ducks: The Lion Duck. With its mighty mane he is a proud duck that stands out from your collection and would like presented at the bathtubs safari! Great gift for wildlife fans, Jungle Kings and safari riders.",
+            "price": 6.99,
+            "category": 1,
+            "rating": 4.5,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/LI1945-2_1024x1024@2x.jpeg?v=1616511285",
+            "image": "lion_duck.webp"
         }
-     },
-     {
-        "pk":9,
-        "model":"products.product",
-        "fields":{
-           "sku":"LI2300",
-           "name":"Lucky Cat Duck",
-           "description":"Rubber duck approx 6-8 cm - Collectible rubber ducks designed by Lilalu. Each duck is free of toxic ingredients, and therefore also suitable for babies and toddlers.",
-           "price":6.99,
-           "category":1,
-           "rating":4.7,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/2300_hl_1024x1024@2x.png?v=1660252399",
-           "image":"luckycat_duck.png"
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "LI2300",
+            "name": "Lucky Cat Duck",
+            "description": "Rubber duck approx 6-8 cm - Collectible rubber ducks designed by Lilalu. Each duck is free of toxic ingredients, and therefore also suitable for babies and toddlers.",
+            "price": 6.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/2300_hl_1024x1024@2x.png?v=1660252399",
+            "image": "luckycat_duck.webp"
         }
-     },
-     {
-        "pk":10,
-        "model":"products.product",
-        "fields":{
-           "sku":"LI1820",
-           "name":"Sheep Duck",
-           "description":"Rubber duck approx 6-8 cm - Collectible rubber ducks designed by Lilalu. Each duck is free of toxic ingredients, and therefore also suitable for babies and toddlers.",
-           "price":6.99,
-           "category":1,
-           "rating":4.4,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/LI1820-2_1024x1024@2x.jpeg?v=1616511356",
-           "image":"sheep_duck.png"
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "LI1820",
+            "name": "Sheep Duck",
+            "description": "Rubber duck approx 6-8 cm - Collectible rubber ducks designed by Lilalu. Each duck is free of toxic ingredients, and therefore also suitable for babies and toddlers.",
+            "price": 6.99,
+            "category": 1,
+            "rating": 4.4,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/LI1820-2_1024x1024@2x.jpeg?v=1616511356",
+            "image": "sheep_duck.webp"
         }
-     },
-     {
-        "pk":11,
-        "model":"products.product",
-        "fields":{
-           "sku":"‎B09LSXB23C",
-           "name":"Family Ducks",
-           "description":"Set of four family ducks.  Yellow mother duck and three colourful, squeaking baby ducks.  Great for bathtime with your baby or toddler.",
-           "price":9.99,
-           "category":2,
-           "rating":3.0,
-           "image_url":"https://m.media-amazon.com/images/I/41LeMrNkoqL._AC_SX425_.jpg",
-           "image":"family_duck.png"
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "‎B09LSXB23C",
+            "name": "Family Ducks",
+            "description": "Set of four family ducks.  Yellow mother duck and three colourful, squeaking baby ducks.  Great for bathtime with your baby or toddler.",
+            "price": 9.99,
+            "category": 2,
+            "rating": 3.0,
+            "image_url": "https://m.media-amazon.com/images/I/41LeMrNkoqL._AC_SX425_.jpg",
+            "image": "family_duck.webp"
         }
-     },
-     {
-        "pk":12,
-        "model":"products.product",
-        "fields":{
-           "sku":"‎B0BH3VJH1R",
-           "name":"Rubber Duck Advent Calendar",
-           "description":"This fun advent calendar is full of surprises and is the perfect pre-Christmas gift. With 24 doors to open, this will make you feel like a lucky ducky all the way up to Christmas Day.",
-           "price":15.99,
-           "category":2,
-           "rating":4.6,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81M-V0eW8aL._AC_SX466_.jpg",
-           "image":"MP_advent_calendar_mini.png"
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "‎B0BH3VJH1R",
+            "name": "Rubber Duck Advent Calendar",
+            "description": "This fun advent calendar is full of surprises and is the perfect pre-Christmas gift. With 24 doors to open, this will make you feel like a lucky ducky all the way up to Christmas Day.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81M-V0eW8aL._AC_SX466_.jpg",
+            "image": "MP_advent_calendar_mini.webp"
         }
-     },
-     {
-        "pk":13,
-        "model":"products.product",
-        "fields":{
-           "sku":"B0B8YTZS5F",
-           "name":"Assorted Christmas Duck",
-           "description":"Go completely christmas quackers with this 20 pice mixed set of christmas themed rubber ducks. Contains a mixture of snowmen ducks, reindeer ducks, penguin ducks, santa ducks and festively decorated ducks.",
-           "price":15.99,
-           "category":2,
-           "rating":3.2,
-           "image_url":"https://m.media-amazon.com/images/I/71Hz+Owm0UL._AC_SX425_.jpg",
-           "image":"MP_assorted_christmas_ducks.png"
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "B0B8YTZS5F",
+            "name": "Assorted Christmas Duck",
+            "description": "Go completely christmas quackers with this 20 pice mixed set of christmas themed rubber ducks. Contains a mixture of snowmen ducks, reindeer ducks, penguin ducks, santa ducks and festively decorated ducks.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 3.2,
+            "image_url": "https://m.media-amazon.com/images/I/71Hz+Owm0UL._AC_SX425_.jpg",
+            "image": "MP_assorted_christmas_ducks.webp"
         }
-     },
-     {
-        "pk":14,
-        "model":"products.product",
-        "fields":{
-           "sku":"B07ZHJ8Q1T",
-           "name":"Assorted Ducks",
-           "description":"Pack of 12 brightly coloured assorted ducks.  Fun for all the family.",
-           "price":14.99,
-           "category":2,
-           "rating":4.7,
-           "image_url":"https://m.media-amazon.com/images/I/61aCIlmGmPL._AC_SX425_.jpg",
-           "image":"MP_assorted_ducks_12.png"
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "B07ZHJ8Q1T",
+            "name": "Assorted Ducks",
+            "description": "Pack of 12 brightly coloured assorted ducks.  Fun for all the family.",
+            "price": 14.99,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "https://m.media-amazon.com/images/I/61aCIlmGmPL._AC_SX425_.jpg",
+            "image": "MP_assorted_ducks_12.webp"
         }
-     },
-     {
-        "pk":15,
-        "model":"products.product",
-        "fields":{
-           "sku":"B0B4FXQMRG",
-           "name":"Bobble Hat Baby Ducks",
-           "description":"How can you resist this 12 pack of baby ducks wearing bobble hats and sunglasses?  Soooooo cute!",
-           "price":9.99,
-           "category":2,
-           "rating":4.8,
-           "image_url":"https://m.media-amazon.com/images/I/71KhnazdVdL._AC_SX425_.jpg",
-           "image":"MP_bobblehat_baby_ducks_12.png"
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "B0B4FXQMRG",
+            "name": "Bobble Hat Baby Ducks",
+            "description": "How can you resist this 12 pack of baby ducks wearing bobble hats and sunglasses?  Soooooo cute!",
+            "price": 9.99,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": "https://m.media-amazon.com/images/I/71KhnazdVdL._AC_SX425_.jpg",
+            "image": "MP_bobblehat_baby_ducks_12.webp"
         }
-     },
-     {
-        "pk":16,
-        "model":"products.product",
-        "fields":{
-           "sku":"B0B6CV7JBV",
-           "name":"Breast Cancer Awareness Ducks",
-           "description":"An ideal choice for giving as gifts for breast cancer survivors and decorating the bathroom. 24 Pack.",
-           "price":15.99,
-           "category":2,
-           "rating":4.4,
-           "image_url":"https://m.media-amazon.com/images/I/71NaEM3hecL._AC_SX425_.jpg",
-           "image":"MP_breast_cancer_ducks_24.png"
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "B0B6CV7JBV",
+            "name": "Breast Cancer Awareness Ducks",
+            "description": "An ideal choice for giving as gifts for breast cancer survivors and decorating the bathroom. 24 Pack.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.4,
+            "image_url": "https://m.media-amazon.com/images/I/71NaEM3hecL._AC_SX425_.jpg",
+            "image": "MP_breast_cancer_ducks_24.webp"
         }
-     },
-     {
-        "pk":17,
-        "model":"products.product",
-        "fields":{
-           "sku":"‎B0B4PDJ6LX",
-           "name":"Cool Ducks",
-           "description":"Our super cool ducks come fully equipped with gold necklace and sunglasses. 18 Pack.",
-           "price":13.99,
-           "category":2,
-           "rating":4.4,
-           "image_url":"https://m.media-amazon.com/images/I/61q7d+M6MDL._AC_SX425_.jpg",
-           "image":"MP_cool_ducks_18.png"
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "‎B0B4PDJ6LX",
+            "name": "Cool Ducks",
+            "description": "Our super cool ducks come fully equipped with gold necklace and sunglasses. 18 Pack.",
+            "price": 13.99,
+            "category": 2,
+            "rating": 4.4,
+            "image_url": "https://m.media-amazon.com/images/I/61q7d+M6MDL._AC_SX425_.jpg",
+            "image": "MP_cool_ducks_18.webp"
         }
-     },
-     {
-        "pk":18,
-        "model":"products.product",
-        "fields":{
-           "sku":"B0B99VKRS7",
-           "name":"Cowboy Ducks",
-           "description":"24 Cowboy rubber ducks with hat and scarf.",
-           "price":17.99,
-           "category":2,
-           "rating":4.8,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81XBpEOy0-L._AC_SX679_.jpg",
-           "image":"MP_cowboy_ducks_24.png"
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "B0B99VKRS7",
+            "name": "Cowboy Ducks",
+            "description": "24 Cowboy rubber ducks with hat and scarf.",
+            "price": 17.99,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81XBpEOy0-L._AC_SX679_.jpg",
+            "image": "MP_cowboy_ducks_24.webp"
         }
-     },
-     {
-        "pk":19,
-        "model":"products.product",
-        "fields":{
-           "sku":"B08F71X2HB",
-           "name":"Crazy Disco Ducks",
-           "description":"Light up funky flashing disco duck. 6 Pack in assorted colours.",
-           "price":19.99,
-           "category":2,
-           "rating":5.0,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61V-Lf7TrvL._AC_SX679_.jpg",
-           "image":"MP_crazy_disco_ducks_6.png"
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "B08F71X2HB",
+            "name": "Crazy Disco Ducks",
+            "description": "Light up funky flashing disco duck. 6 Pack in assorted colours.",
+            "price": 19.99,
+            "category": 2,
+            "rating": 5.0,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61V-Lf7TrvL._AC_SX679_.jpg",
+            "image": "MP_crazy_disco_ducks_6.webp"
         }
-     },
-     {
-        "pk":20,
-        "model":"products.product",
-        "fields":{
-           "sku":"B09891MS7G",
-           "name":"Glow in the Dark Assorted Halloween Ducks",
-           "description":"Give you baby or toddler a halloween themed bath with our glow in the dark spooky ducks.  12 in a pack.",
-           "price":16.99,
-           "category":2,
-           "rating":4.7,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71VQNDS0z4L._AC_SX679_.jpg",
-           "image":"MP_halloween_glow_ducks_12.png"
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "B09891MS7G",
+            "name": "Glow in the Dark Assorted Halloween Ducks",
+            "description": "Give you baby or toddler a halloween themed bath with our glow in the dark spooky ducks.  12 in a pack.",
+            "price": 16.99,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71VQNDS0z4L._AC_SX679_.jpg",
+            "image": "MP_halloween_glow_ducks_12.webp"
         }
-     },
-     {
-        "pk":21,
-        "model":"products.product",
-        "fields":{
-           "sku":"B0B1JQ1BLM",
-           "name":"Large Glitter Ducks x 6",
-           "description":"Get in the party mood with our large glitter ducks.  6 different colours.",
-           "price":19.99,
-           "category":2,
-           "rating":4.3,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61RTrJ9pSJL._AC_.jpg",
-           "image":"MP_large_glitter_ducks_6.png"
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "B0B1JQ1BLM",
+            "name": "Large Glitter Ducks x 6",
+            "description": "Get in the party mood with our large glitter ducks.  6 different colours.",
+            "price": 19.99,
+            "category": 2,
+            "rating": 4.3,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61RTrJ9pSJL._AC_.jpg",
+            "image": "MP_large_glitter_ducks_6.webp"
         }
-     },
-     {
-        "pk":22,
-        "model":"products.product",
-        "fields":{
-           "sku":"B08H8CV1VH",
-           "name":"'Easily Distracted by Ducks' Keyring",
-           "description":"Funny duck keyring for duck-lovers",
-           "price":12.99,
-           "category":4,
-           "rating":5.0,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61dRFTsATDL._AC_UX569_.jpg",
-           "image":"distracted_keyring.png"
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "B08H8CV1VH",
+            "name": "'Easily Distracted by Ducks' Keyring",
+            "description": "Funny duck keyring for duck-lovers",
+            "price": 12.99,
+            "category": 4,
+            "rating": 5.0,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61dRFTsATDL._AC_UX569_.jpg",
+            "image": "distracted_keyring.webp"
         }
-     },
-     {
-        "pk":23,
-        "model":"products.product",
-        "fields":{
-           "sku":"S4DGADB02",
-           "name":"'I Don't Give a Duck' Tee - Black",
-           "description":"Let everyone know you really don't give a duck about anything with this funny and cool t-shirt.",
-           "price":15.99,
-           "category":3,
-           "rating":4.8,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/Idontgiveaduckblack_1024x1024@2x.jpg?v=1648938205",
-           "image":"dont_give_a_duck_t_black.png"
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "S4DGADB02",
+            "name": "'I Don't Give a Duck' Tee - Black",
+            "description": "Let everyone know you really don't give a duck about anything with this funny and cool t-shirt.",
+            "price": 15.99,
+            "category": 3,
+            "rating": 4.8,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/Idontgiveaduckblack_1024x1024@2x.jpg?v=1648938205",
+            "image": "dont_give_a_duck_t_black.webp"
         }
-     },
-     {
-        "pk":24,
-        "model":"products.product",
-        "fields":{
-           "sku":"B08KRHQRYM",
-           "name":"Just a Girl Who Loves Ducks' Bangle",
-           "description":"Stainless steel, hypoallergenic and adjustable so one-size-fits-all.  Gift comes presented in a velvet bag.  Perfect gift for any girl who just loves ducks. ",
-           "price":14.99,
-           "category":4,
-           "rating":3.8,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61QY4TaqVJL._AC_UX569_.jpg",
-           "image":"duck_charm_bangle.png"
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "B08KRHQRYM",
+            "name": "Just a Girl Who Loves Ducks' Bangle",
+            "description": "Stainless steel, hypoallergenic and adjustable so one-size-fits-all.  Gift comes presented in a velvet bag.  Perfect gift for any girl who just loves ducks. ",
+            "price": 14.99,
+            "category": 4,
+            "rating": 3.8,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61QY4TaqVJL._AC_UX569_.jpg",
+            "image": "duck_charm_bangle.webp"
         }
-     },
-     {
-        "pk":25,
-        "model":"products.product",
-        "fields":{
-           "sku":"B093B1B63H",
-           "name":"Cute Resin Duck Dropper Earrings",
-           "description":"Very cute rubber duck earrings made from resin and alloy.  Hypoallergenic and free from lead and nickle.",
-           "price":8.99,
-           "category":4,
-           "rating":3.0,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/41pWUHHfBaS._AC_UX569_.jpg",
-           "image":"duck_droppers_2.png"
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "B093B1B63H",
+            "name": "Cute Resin Duck Dropper Earrings",
+            "description": "Very cute rubber duck earrings made from resin and alloy.  Hypoallergenic and free from lead and nickle.",
+            "price": 8.99,
+            "category": 4,
+            "rating": 3.0,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/41pWUHHfBaS._AC_UX569_.jpg",
+            "image": "duck_droppers_2.webp"
         }
-     },
-     {
-        "pk":26,
-        "model":"products.product",
-        "fields":{
-           "sku":"B09TNGW5YD",
-           "name":"Resin Rubber Duck & Pearl Earrings ",
-           "description":"Very cute rubber duck earrings made from resin and alloy.  Hypoallergenic and free from lead and nickle.  Perfect gift.",
-           "price":8.99,
-           "category":4,
-           "rating":4.4,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51OlsQjif6L._AC_UY535_.jpg",
-           "image":"duck_droppers.png"
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "B09TNGW5YD",
+            "name": "Resin Rubber Duck & Pearl Earrings ",
+            "description": "Very cute rubber duck earrings made from resin and alloy.  Hypoallergenic and free from lead and nickle.  Perfect gift.",
+            "price": 8.99,
+            "category": 4,
+            "rating": 4.4,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51OlsQjif6L._AC_UY535_.jpg",
+            "image": "duck_droppers.webp"
         }
-     },
-     {
-        "pk":27,
-        "model":"products.product",
-        "fields":{
-           "sku":"B09MF8JVQ1",
-           "name":"Rubber Duck Jewel Earrings",
-           "description":"Charming rubber duck earrings with jewel.  Stainless steel and free from lead and nickle.  Comes in velvet presentation pouch, ready for gift-giving.",
-           "price":9.99,
-           "category":4,
-           "rating":5.0,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51bfJUaPJ3L._AC_UX569_.jpg",
-           "image":"jewel_duck_droppers.png"
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "sku": "B09MF8JVQ1",
+            "name": "Rubber Duck Jewel Earrings",
+            "description": "Charming rubber duck earrings with jewel.  Stainless steel and free from lead and nickle.  Comes in velvet presentation pouch, ready for gift-giving.",
+            "price": 9.99,
+            "category": 4,
+            "rating": 5.0,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51bfJUaPJ3L._AC_UX569_.jpg",
+            "image": "jewel_duck_droppers.webp"
         }
-     },
-     {
-        "pk":28,
-        "model":"products.product",
-        "fields":{
-           "sku":"B072QZTZ3G",
-           "name":"Ladies 5-Pack Duck Socks",
-           "description":"Keep your five little ducks warm in these colourful and toasty rubber duck socks.",
-           "price":13.99,
-           "category":3,
-           "rating":4.3,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91a72+VEm9L._AC_UX569_.jpg",
-           "image":"ladies_duck_socks.png"
+    },
+    {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "sku": "B072QZTZ3G",
+            "name": "Ladies 5-Pack Duck Socks",
+            "description": "Keep your five little ducks warm in these colourful and toasty rubber duck socks.",
+            "price": 13.99,
+            "category": 3,
+            "rating": 4.3,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91a72+VEm9L._AC_UX569_.jpg",
+            "image": "ladies_duck_socks.webp"
         }
-     },
-     {
-        "pk":29,
-        "model":"products.product",
-        "fields":{
-           "sku":"S4DJBDW01",
-           "name":"'Just a Boy Who Loves Ducks' Tee - White",
-           "description":"Perfect t-shirt for the man in your life who just loves ducks!",
-           "price":12.99,
-           "category":3,
-           "rating":4.6,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/JUSTABOYwhite_1024x1024@2x.jpg?v=1648937649",
-           "image":"love_duck_t_white.png"
+    },
+    {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+            "sku": "S4DJBDW01",
+            "name": "'Just a Boy Who Loves Ducks' Tee - White",
+            "description": "Perfect t-shirt for the man in your life who just loves ducks!",
+            "price": 12.99,
+            "category": 3,
+            "rating": 4.6,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/JUSTABOYwhite_1024x1024@2x.jpg?v=1648937649",
+            "image": "love_duck_t_white.webp"
         }
-     },
-     {
-        "pk":30,
-        "model":"products.product",
-        "fields":{
-           "sku":"S4DJBDW01",
-           "name":"'One of a Kind' Tee - Black'",
-           "description":"100% cotton.",
-           "price":12.99,
-           "category":3,
-           "rating":5.0,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/JUSTABOYwhite_1024x1024@2x.jpg?v=1648937649",
-           "image":"one_of_a_kind_t_black.png"
+    },
+    {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+            "sku": "S4DJBDW01",
+            "name": "'One of a Kind' Tee - Black'",
+            "description": "100% cotton.",
+            "price": 12.99,
+            "category": 3,
+            "rating": 5.0,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/JUSTABOYwhite_1024x1024@2x.jpg?v=1648937649",
+            "image": "one_of_a_kind_t_black.webp"
         }
-     },
-     {
-        "pk":31,
-        "model":"products.product",
-        "fields":{
-           "sku":"B07D23L725",
-           "name":"Rubber Duck Stud Earrings",
-           "description":"Cute rubber duck studs.  Stainless steel and rubber. Hypoallergenic and free from lead and nickle.",
-           "price":8.99,
-           "category":4,
-           "rating":4.0,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61TBS5ZDM+L._AC_UX535_.jpg",
-           "image":"rubber_duck_rubber_studs.png"
+    },
+    {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+            "sku": "B07D23L725",
+            "name": "Rubber Duck Stud Earrings",
+            "description": "Cute rubber duck studs.  Stainless steel and rubber. Hypoallergenic and free from lead and nickle.",
+            "price": 8.99,
+            "category": 4,
+            "rating": 4.0,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61TBS5ZDM+L._AC_UX535_.jpg",
+            "image": "rubber_duck_rubber_studs.webp"
         }
-     },
-     {
-        "pk":32,
-        "model":"products.product",
-        "fields":{
-           "sku":"B07GCS8RZ4",
-           "name":"Rubber Duck Silver Studs",
-           "description":"Dainty yellow studs in sterling silver.  Extremely cute, fun and quirky.  Finished in enamel.",
-           "price":15.99,
-           "category":4,
-           "rating":4.8,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51biJX7YOwS._AC_UX569_.jpg",
-           "image":"rubber_duck_silver_studs.png"
+    },
+    {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+            "sku": "B07GCS8RZ4",
+            "name": "Rubber Duck Silver Studs",
+            "description": "Dainty yellow studs in sterling silver.  Extremely cute, fun and quirky.  Finished in enamel.",
+            "price": 15.99,
+            "category": 4,
+            "rating": 4.8,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51biJX7YOwS._AC_UX569_.jpg",
+            "image": "rubber_duck_silver_studs.webp"
         }
-     },
-     {
-        "pk":33,
-        "model":"products.product",
-        "fields":{
-           "sku":"B0763Z97V7",
-           "name":"Silver Duck Necklace",
-           "description":"Adorable sterling silver rubber duck charm necklace - includes 18\" sterling silver chain and arrives in a small gift box.",
-           "price":19.99,
-           "category":4,
-           "rating":4.5,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/31niYhr73RL._AC_.jpg",
-           "image":"silver_duck_necklace.png"
+    },
+    {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+            "sku": "B0763Z97V7",
+            "name": "Silver Duck Necklace",
+            "description": "Adorable sterling silver rubber duck charm necklace - includes 18\" sterling silver chain and arrives in a small gift box.",
+            "price": 19.99,
+            "category": 4,
+            "rating": 4.5,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/31niYhr73RL._AC_.jpg",
+            "image": "silver_duck_necklace.webp"
         }
-     },
-     {
-        "pk":34,
-        "model":"products.product",
-        "fields":{
-           "sku":"B0B37DQTVW",
-           "name":"Yellow/White Opal and Sterling Silver Rubber Duck Stud Earrings",
-           "description":"These cute duck earrings are made with sterling silver and yellow/white opal.  Arrives in gift box.  Perfect gift.",
-           "price":19.99,
-           "category":4,
-           "rating":4.5,
-           "image_url":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51fY7TV5acL._AC_UX569_.jpg",
-           "image":"sparkle_duck_studs.png"
+    },
+    {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+            "sku": "B0B37DQTVW",
+            "name": "Yellow/White Opal and Sterling Silver Rubber Duck Stud Earrings",
+            "description": "These cute duck earrings are made with sterling silver and yellow/white opal.  Arrives in gift box.  Perfect gift.",
+            "price": 19.99,
+            "category": 4,
+            "rating": 4.5,
+            "image_url": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51fY7TV5acL._AC_UX569_.jpg",
+            "image": "sparkle_duck_studs.webp"
         }
-     },
-     {
-        "pk":35,
-        "model":"products.product",
-        "fields":{
-           "sku":"S4DRDSATW01",
-           "name":"'Rubber Duck is my Spirit Animal' Tee - white'",
-           "description":"Funny t-shirt.  100% Cotton.",
-           "price":12.99,
-           "category":3,
-           "rating":4.7,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/RubberDuckismyspiritanimalW_800x.jpg?v=1656427829",
-           "image":"spirit_animal_t_white.png"
+    },
+    {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+            "sku": "S4DRDSATW01",
+            "name": "'Rubber Duck is my Spirit Animal' Tee - white'",
+            "description": "Funny t-shirt.  100% Cotton.",
+            "price": 12.99,
+            "category": 3,
+            "rating": 4.7,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/RubberDuckismyspiritanimalW_800x.jpg?v=1656427829",
+            "image": "spirit_animal_t_white.webp"
         }
-     },
-     {
-        "pk":36,
-        "model":"products.product",
-        "fields":{
-           "sku":"BUD1129",
-           "name":"Deluxe DJ Duck",
-           "description":"Let the music play!  Height 10cm.  Funky, colourful and modern design.  Comes in matching presentation box.",
-           "price":12.99,
-           "category":5,
-           "rating":4.7,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/BUD1129-2_1024x1024@2x.jpeg?v=1616510776",
-           "image":"dj_duck.png"
+    },
+    {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+            "sku": "BUD1129",
+            "name": "Deluxe DJ Duck",
+            "description": "Let the music play!  Height 10cm.  Funky, colourful and modern design.  Comes in matching presentation box.",
+            "price": 12.99,
+            "category": 5,
+            "rating": 4.7,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/BUD1129-2_1024x1024@2x.jpeg?v=1616510776",
+            "image": "dj_duck.webp"
         }
-     },
-     {
-        "pk":37,
-        "model":"products.product",
-        "fields":{
-           "sku":"BUD1129",
-           "name":"Deluxe Great Britain Duck",
-           "description":"Luxury Duck with Union Jack pattern.  Very patriotic!",
-           "price":12.99,
-           "category":5,
-           "rating":4.7,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/BUD0190-N-2_1024x1024@2x.jpeg?v=1616510863",
-           "image":"great_britain_duck.png"
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "sku": "BUD1129",
+            "name": "Deluxe Great Britain Duck",
+            "description": "Luxury Duck with Union Jack pattern.  Very patriotic!",
+            "price": 12.99,
+            "category": 5,
+            "rating": 4.7,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/BUD0190-N-2_1024x1024@2x.jpeg?v=1616510863",
+            "image": "great_britain_duck.webp"
         }
-     },
-     {
-        "pk":38,
-        "model":"products.product",
-        "fields":{
-           "sku":"BUD0569",
-           "name":"Deluxe Ouchie Duck",
-           "description":"'Get well soon.  Ouchie will patch you up!'  Gorgeous luxury duck with colourful plaster pattern.  Great as a get well soon gift.",
-           "price":12.99,
-           "category":5,
-           "rating":4.7,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/BUD0569_1024x1024@2x.jpg?v=1616510855",
-           "image":"ouchie_duck.png"
+    },
+    {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+            "sku": "BUD0569",
+            "name": "Deluxe Ouchie Duck",
+            "description": "'Get well soon.  Ouchie will patch you up!'  Gorgeous luxury duck with colourful plaster pattern.  Great as a get well soon gift.",
+            "price": 12.99,
+            "category": 5,
+            "rating": 4.7,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/BUD0569_1024x1024@2x.jpg?v=1616510855",
+            "image": "ouchie_duck.webp"
         }
-     },
-     {
-        "pk":39,
-        "model":"products.product",
-        "fields":{
-           "sku":"LI2057",
-           "name":"Panda Duck",
-           "description":"Who's that with these lovely teddy's ears, black stumpy tail and dreamy saucer eyes? Right, that must be the Panda duck!",
-           "price":4.99,
-           "category":6,
-           "rating":4.7,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/2057_Panda_Quietscheente_design_by_LILALU_-_Frontseite_1024x1024@2x.png?v=1616511198",
-           "image":"panda_duck.png"
+    },
+    {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "sku": "LI2057",
+            "name": "Panda Duck",
+            "description": "Who's that with these lovely teddy's ears, black stumpy tail and dreamy saucer eyes? Right, that must be the Panda duck!",
+            "price": 4.99,
+            "category": 6,
+            "rating": 4.7,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/2057_Panda_Quietscheente_design_by_LILALU_-_Frontseite_1024x1024@2x.png?v=1616511198",
+            "image": "panda_duck.webp"
         }
-     },
-     {
-        "pk":40,
-        "model":"products.product",
-        "fields":{
-           "sku":"LI2057",
-           "name":"Peacock Duck",
-           "description":"Stunning plumage. The peacock duck impresses, just like a real peacock, with its beautiful, all coloured plumage. A truly impressive eye-catcher!",
-           "price":4.99,
-           "category":6,
-           "rating":4.3,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/1990_Pfau_Quietscheente_design_by_LILALU_-_Frontseite_1024x1024@2x.png?v=1616511247",
-           "image":"peacock_duck.png"
+    },
+    {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "sku": "LI2057",
+            "name": "Peacock Duck",
+            "description": "Stunning plumage. The peacock duck impresses, just like a real peacock, with its beautiful, all coloured plumage. A truly impressive eye-catcher!",
+            "price": 4.99,
+            "category": 6,
+            "rating": 4.3,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/1990_Pfau_Quietscheente_design_by_LILALU_-_Frontseite_1024x1024@2x.png?v=1616511247",
+            "image": "peacock_duck.webp"
         }
-     },
-     {
-        "pk":41,
-        "model":"products.product",
-        "fields":{
-           "sku":"LI2100",
-           "name":"Pikachu Duck",
-           "description":"With its bright red cheeks, the Piku Squeak Duck is not only sweet-toothed, but also a real beauty in the world of squeaky ducks.",
-           "price":4.99,
-           "category":6,
-           "rating":4.5,
-           "image_url":"https://cdn.shopify.com/s/files/1/1114/0068/products/LILALU-SHARE-HAPPINESS-Piku-Quietscheente-design-by-LILALU-F_1024x1024@2x.png?v=1616511160",
-           "image":"pikachu_duck.png"
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "sku": "LI2100",
+            "name": "Pikachu Duck",
+            "description": "With its bright red cheeks, the Piku Squeak Duck is not only sweet-toothed, but also a real beauty in the world of squeaky ducks.",
+            "price": 4.99,
+            "category": 6,
+            "rating": 4.5,
+            "image_url": "https://cdn.shopify.com/s/files/1/1114/0068/products/LILALU-SHARE-HAPPINESS-Piku-Quietscheente-design-by-LILALU-F_1024x1024@2x.png?v=1616511160",
+            "image": "pikachu_duck.webp"
         }
-     }
-     
+    }
+
 ]

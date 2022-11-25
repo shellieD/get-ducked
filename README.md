@@ -52,7 +52,7 @@ This project has been developed as part of the [Code Institute's](https://codein
 * I can reset my password regularly to keep my information safe.
 * I can regain access to my account if I forget my password.
 
-* I can add mutipleproducts to my basket and and see the total price of all items at a glance so I can keep tracks on how much I am spending.
+* I can add multiple products to my basket and and see the total price of all items at a glance so I can keep tracks on how much I am spending.
 
 * I can subscribe to a newsletter so that I can be informed of new products, special offers and discount codes.
 * I can add a review to the page to provide feedback about the product and service.
@@ -284,7 +284,7 @@ Link the file to the templates directory in Heroku TEMPLATES_DIR = os.path.join(
 
 17. Create a new file on the top level directory - Procfile
 
-18. Within the Procfile add the code - web: guincorn PROJECT_NAME.wsgi
+18. Within the Procfile add the code - web: gunicorn PROJECT_NAME.wsgi
 
 19. In the terminal, add the changed files, commit and push to GitHub
 
@@ -292,7 +292,7 @@ Link the file to the templates directory in Heroku TEMPLATES_DIR = os.path.join(
 
 Heroku will now build the app for you. Once it has completed the build process you will see a 'Your App Was Successfully Deployed' message and a link to the app to visit the live site.
 
-### Forking the Gihub Repository
+### Forking the Github Repository
 
 1. By forking the GitHub Repository, you will be able to make a copy of the original repository on your own GitHub account, allowing you to view and/or make changes without affecting the original repository by using the following steps:
 
@@ -325,19 +325,11 @@ Heroku will now build the app for you. Once it has completed the build process y
 
 
 TO DO:
-SOOOO MUCH!!!
+SO MUCH!!!
 
 - 'Are you sure you want to delete { product.name }' popup to prevent accidental product deletion
 - Update Jira Board
- - Set up real confirmation emails - done
  - testing?
- - Footer - WIP
- - Subscribe to promotional emails (pop up discount code when subscribed? Add new field to checkout page for discount codes?)
- - Ability to add/view product reviews
- - Contact page?
- - Wave Webaim - sort contrast errors adn acccessability errors.
-
-
 
 
 For Readme:-
