@@ -7,7 +7,6 @@ html {
 body {
     background: url('/media/background2.webp') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh-164px);
     color: black;
     font-family: 'Dosis', sans-serif;
 }
@@ -175,7 +174,6 @@ table {
 .contact-container {
     background: url(https://get-ducked.s3.eu-west-2.amazonaws.com/media/bubble-duck.webp) no-repeat center center;
     background-size: cover;
-    height: calc(100vh-164px);
 }
 
 #sort-selector {
@@ -350,7 +348,7 @@ label:hover~input:checked~label {
 .allauth-form-inner-content input[type='submit']:hover {
     color: black;
     background-color: #ffc107;
-    border-color: #ffc107;
+    border-color: black;
 }
 
 /** -------------------------------------------------------------TOASTS */

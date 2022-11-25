@@ -13,7 +13,7 @@ Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_ci
 
 We have your phone number on file as {{ order.phone_number }}
 
-If you have any questions about your order, please feel free to contact us at {{ contact_email }}
+If you have any questions about your order, please feel free to contact us at customer_service@getducked.com
 
 Thank you for ordering with us!
 

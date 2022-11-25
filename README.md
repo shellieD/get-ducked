@@ -2,10 +2,6 @@
 
 <h1 align=center>GET DUCKED</h1> 
 
-**AM I RESPONSIVE SCREENSHOT TO GO HERE**
-
-**LINK TO DEPLOYED SITE TO GO HERE**
-
 <h2 align=center>Introduction</h2> 
 
 Get Ducked is a full-stack, e-commerce website built using the Django Framework with Python, Javascript, HTML and CSS.
@@ -24,6 +20,11 @@ This store also provides role-based permissions allowing super users full CRUD f
 
 **PLEASE NOTE** As this website is a fictional store and for educational purposes only no real payments should be made via this site.  for testing purposes, the card numbers 4242 should be used as a test card.
 
+[Visit the live site on Heroku](https://get-ducked.herokuapp.com/)
+
+![Am I Responsive Screenshot](docs/images/amiresponsive.png)
+
+
 ## UX - User Experience Design
 
 ## The Strategy Plane
@@ -39,23 +40,32 @@ This project has been developed as part of the [Code Institute's](https://codein
 
 <strong>As a Site User:</strong>
 
+NAVIGATION
 * I can search through the products using a keyword so I can find a specific item that I would like to purchase.
 * I can view a list of products so I can see the full range of products available.
 * I can click on a product to see the more information about the product to allow me to make an informed decision about my purchase.
 * I can easily search for products by applying filters, searching categories or performing key word searches so that I can easily find a product I am looking for.
 * I can navigate easily around the site to find what I am looking for.
 
+REGISTRATION/USER PROFILE
 * I can register for an account using my username, email and password.
 * I will receive a confirmation email after registering for an account so that I can be sure my order has been received.
 * I can log in and out of my account easily to enable me to access/update my personal information.
 * I can access my account to view details of my order history.
 * I can reset my password regularly to keep my information safe.
 * I can regain access to my account if I forget my password.
+* I can add and remove items to my wishlist so I can come back and purchase them later.
 
+CHECKOUT
 * I can add multiple products to my basket and and see the total price of all items at a glance so I can keep tracks on how much I am spending.
+* I can modify the items in my basket easily before checking out.
+* I can pay for the items in my basket with the knowledge that my transaction details will be kept secure.
+* I will receive a confirmation email when I have made a purchase so I know my order was successfull.
 
+OTHER
 * I can subscribe to a newsletter so that I can be informed of new products, special offers and discount codes.
 * I can add a review to the page to provide feedback about the product and service.
+* I can contact the site owner if I wish to know more about a product, the service provided or my order.
 
 
 <strong>As a Super User:</strong>
@@ -64,6 +74,8 @@ This project has been developed as part of the [Code Institute's](https://codein
 * I can easily add products to the website to provide new and exciting items to the customer.
 * I can delete products from the website to remove items that either do not sell well or are no longer available.
 * I can update product details such as information and price.
+* I can moderate reviews submitted to the website so that only reviews I choose will appear to the public.
+* I can delete or edit reviews if necessary.
 
 <strong>Agile Methodology</strong>
 
@@ -126,8 +138,6 @@ Some modifications were made to the initial design during the development proces
 
 ### Color Scheme
 
-**NEED TO UPDATE THE RED COLOR!**
-
 ![Color Scheme](docs/images/color-scheme.png)
 
 I wanted to keep the color scheme simple and in keeping with the rubber duck theme.  I therefore choose a bright yellow and an orangey red to symbolise the colors of the rubber duck and a ducks beak.  I used a combination of white and black to keep a high color contrast for text and forms on the page.  Buttons were styled using either a black background with yellow text, or a yellow background with black text and the colors would invert when hovered over.
@@ -144,7 +154,7 @@ Only one font is used throughout the website, sourced from [Google Fonts](https:
 
 For the landing page I used an image sourced from [Pexels](https://www.pexels.com/) of a yellow bathtub surrounded by yellow rubber ducks with some ladies legs sticking out of the bath.  It is brightly coloured and adds an element of fun to the website.
 
-All products were sourced from either Amazon, or were pulled from the website [shop4ducks.co.uk](https://www.shop4ducks.co.uk/) and whilst I didn't have explicit permissions to use the images as this website is for educational purposes only and will not be used for profit, I deemed this was acceptable and will credit accordingly at the bottom of this documentation. **CHECK WITH MENTOR THAT THIS IS OK** 
+All products were sourced from either Amazon, or were pulled from the website [shop4ducks.co.uk](https://www.shop4ducks.co.uk/) <--(great if you're actually looking to buy some rubber ducks!!) and whilst I didn't have explicit permissions to use the images as this website is for educational purposes only and will not be used for profit, I deemed this was acceptable and will credit accordingly at the bottom of this documentation. **CHECK WITH MENTOR THAT THIS IS OK** 
 
 ![Background Image](docs/images/background.jpg)
 
@@ -154,13 +164,32 @@ I also sourced a noimage file, in the event that the server cannot find the corr
 
 Background-image:  Photo by Snack Toronto: https://www.pexels.com/photo/yellow-steel-bathtub-1630344/
 
-* BUG - unable to close toasts with close button.... need to figure out a workaround - sporadic behaviour, sometimes works, sometimes doesn't
-* BUG - Order not being created by webhook handler when website breaks (PI create/charged and succeeds) - solved - gitpod workspace url had changed, so the webhook endpoint needed to be updated in Stripe - GAHH!
-* minus quantity button not disabling correctly.
 
 ## Features
 
 ### Navigation Bar
+
+The main navigation bar allows all users of the site to easily navigate the store and search/sort items in the product list. Users can either search by viewing all products, filtering by category, or entering a keyword in the search bar to receive a list of related products.
+
+On desktop browers:
+![Main nav - large screens](docs/images/main-nav-large.png)
+
+Each category has a drop-down menu and users can further filter/sort the products in a number of ways.  
+
+Users are afforded the same functionality on mobile browsers, but with a more compact nav bar using intuitive icons rather than text to save on screen real-estate and a handy pop-down menu to give the user further options.
+
+Mobile Nav Colllapsed:
+![Mobile Nav Collapsed](docs/images/mobile-nav-collapsed.png)
+<br>
+Mobile Nav Expanded:
+![Mobile Nav Expanded](docs/images/mobile-nav-expanded.png)
+
+
+
+
+On mobile browers:
+
+
 
 ### Footer
 
@@ -173,6 +202,10 @@ Background-image:  Photo by Snack Toronto: https://www.pexels.com/photo/yellow-s
 Testing has taken place continuously throughout the development of the website. Each view was tested regularly using print statements to ensure the expected outcome was achieved. When the outcome produced was not as expected, debugging was undertaken at that point. I have detailed below some of the bugs that have been resolved and some that remain (due to time constraints/knowledge gaps).
 
 All testing and code validation information can be found in the separate [TESTING.md](TESTING.md) file
+
+* BUG - unable to close toasts with close button.... need to figure out a workaround - sporadic behaviour, sometimes works, sometimes doesn't
+* BUG - Order not being created by webhook handler when website breaks (PI create/charged and succeeds) - solved - gitpod workspace url had changed, so the webhook endpoint needed to be updated in Stripe - GAHH!
+* minus quantity button not disabling correctly.
 
 ## Technologies Used
 
