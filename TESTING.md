@@ -42,7 +42,7 @@ Custom CSS was validated using [W3C Jigsaw CSS Validation Service](https://jigsa
 
 ![Test Case 001c]()
 
-To ensure the HTML was validated correctly, I navigated to the website and used the dev tools to copy the rendered code and pasted this into the validator.  I have not included screenshots of the validator results as they all returned the same and it is impossible to tell from the screenshots which files I am testing. 
+To ensure the HTML was validated correctly, I navigated to the website and used the dev tools to copy the rendered code and pasted this into the validator.  Some errors were returned through the validator initially which were rectified and then re-tested.  Any other errors relate to third party code such as Stripe elements, etc.  These remain as they are, but have been documented in the full testing schedule and links to the validator results can be found within that document.
 
 ### Test Case 002
 

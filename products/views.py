@@ -72,12 +72,18 @@ def product_detail(request, product_id):
     """ View to show individual product detail """
 
     product = get_object_or_404(Product, pk=product_id)
-    wishlist = Product.objects.filter(user_wishlist=request.user)
+    if request.user.is_authenticated:
+        wishlist = Product.objects.filter(user_wishlist=request.user)
 
-    context = {
-        'product': product,
-        'wishlist': wishlist
-    }
+        context = {
+            'product': product,
+            'wishlist': wishlist
+        }
+
+    else:
+        context = {
+            'product': product,
+        }
 
     return render(request, 'products/product_detail.html', context)
 
