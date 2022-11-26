@@ -94,11 +94,21 @@
 
                         <div class="col-12">
                             {% if request.user.is_authenticated %}
+                            {% if product in wishlist %}
+                            <div>
+                                <a class="text-black" href="{% url 'add_to_wishlist' product.id %}"><i
+                                        class="fas fa-heart wishlist" role="button"></i> Remove from
+                                    wishlist</a>
+                            </div>
+
+                            {% else %}
                             <div>
                                 <a class="text-black" href="{% url 'add_to_wishlist' product.id %}"><i
                                         class="far fa-heart wishlist" role="button"></i> Add to
                                     wishlist</a>
                             </div>
+                            {% endif %}
+
                             {% endif %}
                             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-pill mt-5">
                                 <span class="icon">
