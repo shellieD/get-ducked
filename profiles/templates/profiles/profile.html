@@ -38,6 +38,7 @@
         <div class="col-12 col-lg-6">
             <div>
                 <p class="text-muted h4">Order History</p>
+                {% if orders %}
                 <div class="order-history table-responsive">
                     <table class="table table-sm table-borerless">
                         <thead>
@@ -49,7 +50,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            {% if orders %}
                             {% for order in orders %}
                             <tr>
                                 <td>
@@ -71,14 +71,15 @@
                                 <td>{{ order.grand_total}}</td>
                             </tr>
                             {% endfor %}
-                            {% else %}
+
                         </tbody>
                     </table>
-
-                    No orders found
-                    {% endif %}
-
                 </div>
+                {% else %}
+                <div>
+                    No orders found
+                </div>
+                {% endif %}
                 <hr>
             </div>
             <div>
