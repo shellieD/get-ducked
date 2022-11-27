@@ -60,7 +60,7 @@ CHECKOUT
 * I can add multiple products to my basket and and see the total price of all items at a glance so I can keep tracks on how much I am spending.
 * I can modify the items in my basket easily before checking out.
 * I can pay for the items in my basket with the knowledge that my transaction details will be kept secure.
-* I will receive a confirmation email when I have made a purchase so I know my order was successfull.
+* I will receive a confirmation email when I have made a purchase so I know my order was successful.
 
 OTHER
 * I can subscribe to a newsletter so that I can be informed of new products, special offers and discount codes.
@@ -116,9 +116,7 @@ All functionality and development of this project were managed using Jira Softwa
 
 ## Database Schema
 
-****** TO DO ******
-
-**DATABASE SCHEMA TO GO HERE**
+![Database Schema](docs/images/database-schema.png)
 
 ## The Skeleton Plane
 
@@ -171,20 +169,22 @@ Background-image:  Photo by Snack Toronto: https://www.pexels.com/photo/yellow-s
 
 The main navigation bar allows all users of the site to easily navigate the store and search/sort items in the product list. Users can either search by viewing all products, filtering by category, or entering a keyword in the search bar to receive a list of related products.
 
-On desktop browers:
+On desktop browsers:
 ![Main nav - large screens](docs/images/main-nav-large.png)
 
 Each category has a drop-down menu and users can further filter/sort the products in a number of ways.  
 
 Users are afforded the same functionality on mobile browsers, but with a more compact nav bar using intuitive icons rather than text to save on screen real-estate and a handy pop-down menu to give the user further options.
 
-Mobile Nav Colllapsed:
+Mobile Nav Collapsed:
 <br>
+
 ![Mobile Nav Collapsed](docs/images/mobile-nav-collapsed.png)
 <br>
 
 Mobile Nav Expanded:
 <br>
+
 ![Mobile Nav Expanded](docs/images/mobile-nav-expanded.png)
 
 There are also role-based permissions and the dropdown menu associated with 'My Account' reflects this:
@@ -227,11 +227,13 @@ If a user is registered and is logged in, they will also see a 'Add to Wishlist'
 
 ![Add to Wishlist Link](docs/images/add_to_wishlist.png)  ![Success Message](docs/images/wishlist-success.png)
 
-![Remove from Wishlist Link](docs/images/remove.png) ![Success Messaage](docs/images/remove_from_wishlist.png)
+![Remove from Wishlist Link](docs/images/remove.png) ![Success Message](docs/images/remove_from_wishlist.png)
 
 ### Profile Page
 
+The profile page allows users to update their address information, view a list of their previous order history and see the items in their wishlist.  Users also have the ability to remove items from their wishlist from their profile page.
 
+![Profile Page](docs/images/profile-page.png)
 
 
 
