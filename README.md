@@ -114,12 +114,6 @@ All functionality and development of this project were managed using Jira Softwa
 
 ## Functional Scope
 
-### Flowchart
-
-****** TO DO (if i have time!) ******
-
-**FLOW CHART TO GO HERE** 
-
 ## Database Schema
 
 ****** TO DO ******
@@ -219,6 +213,27 @@ The footer appears on every page and gives users plenty of opportunities to conn
 * Privacy Policy
 * Email Subscription Service
 
+![Footer](docs/images/footer.png)
+
+### Product Detail & Wishlist
+
+When a user clicks on a product card, they are taken to the product detail view where they can see more details of the product they are interested in.  The product detail page show the name, price category, rating and a description of the product.  
+
+It also displays a quantity form, so users can increment or decrement the quantity of the item they are wishing to purchase. 
+
+![Product Detail View](docs/images/product-detail.png)
+
+If a user is registered and is logged in, they will also see a 'Add to Wishlist' link which will add the product to their wishlist.  The wishlist link changes dynamically depending on whether the exists in the users wishlist or not and clicking the button will toggle the status to read 'Add to Wishlist' or 'Remove from Wishlist' accordingly.  This allows users to easily see whether they have already added an item to their wishlist or not.
+
+![Add to Wishlist Link](docs/images/add_to_wishlist.png)  ![Success Message](docs/images/wishlist-success.png)
+
+![Remove from Wishlist Link](docs/images/remove.png) ![Success Messaage](docs/images/remove_from_wishlist.png)
+
+### Profile Page
+
+
+
+
 
 ### Other Features
 
@@ -301,8 +316,6 @@ All testing and code validation information can be found in the separate [TESTIN
 
 ## Deployment
 
-**HOSTING ON AWS TO GO HERE**
-
 ### Deployment through Heroku
 
 1. Sign up / Log in to Heroku
@@ -326,18 +339,24 @@ remove the insecure secret key that django has in the settings file by default a
 replace the databases section with DATABASES = { 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))} ensure the correct indentation for python is used.
 
 9. In the terminal migrate the models over to the new database connection
-Navigate in a browser to cloudinary, log in, or create an account and log in.
 
-10. From the dashboard - copy the CLOUDINARY_URL to the clipboard
-in the env.py file created earlier - add os.environ["CLOUDINARY_URL"] = "paste in the Url copied to the clipboard here"
+10. Navigate in a browser to Amazon AWS, log in, or create an account
 
-11. In Heroku, add the CLOUDINARY_URL and value copied to the clipboard to the config vars
-Also add the KEY - DISABLE_COLLECTSTATIC with the Value - 1 to the config vars
-this key value pair must be removed prior to final deployment
+11. Create a new S3 bucket for the site and create a static directory and media directory within the bucket
+12. From the dashboard - copy the bucket details into the settings.py file:
+- you will require the following:
+- Storage Bucket Name
+- Storage Bucket Region Name
+- Access Key ID
+- Secret Access Key
 
-12. Add the cloudinary libraries to the list of installed apps, the order they are inserted is important, 'cloudinary_storage' goes above 'django.contrib.staticfiles' and 'cloudinary' goes below it.
+13.  Add these settings to the env.py file to link AWS:
+- os.environ["AWS_ACCESS_KEY_ID"] = 'your access key'
+- os.environ["AWS_SECRET_ACCESS_KEY"] = 'your secret access key'
 
-13. In the Settings.py file - add the STATIC files settings - the url, storage path, directory path, root path, media url and default file storage path.
+14. Back in Heroku, add the keys and values from AWS and env.py to the config vars
+
+10. In the Settings.py file - add the STATIC files settings - the url, storage path, directory path, root path, media url and default file storage path.
 Link the file to the templates directory in Heroku TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 14. Change the templates directory to TEMPLATES_DIR - 'DIRS': [TEMPLATES_DIR]
@@ -375,6 +394,16 @@ Heroku will now build the app for you. Once it has completed the build process y
 5. Change the current working directory to the location where you want the cloned directory to be made. 
 
 6. Type git clone, and then paste the URL you copied in Step 3.
+
+This project uses Stripe as a payment provider -
+1. Create a stripe account at stripe.com
+2. Choose developer account to gain access to the api keys required to run the payment processes
+3. Once you have successfully created your stripe account:
+- Copy the stripe public key, stripe secret key and stripe webhook key into your env.py file and into heroku config vars
+- Configure the settings file to find the variables required by stripe.
+
+For more information on how to set up stripe with Django, please refer to the [Stripe Documentation](www.stripe.com).
+
 
 ## Credits
 
