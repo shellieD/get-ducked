@@ -30,13 +30,7 @@ This store also provides role-based permissions allowing super users full CRUD f
 ## The Strategy Plane
 <hr>
 
-### Concept
-
-This project has been developed as part of the [Code Institute's](https://codeinstitute.net/) Diploma in Full-Stack Software Development with eCommerce. 
-
-
-
-
+### User Stories 
 
 <strong>As a Site User:</strong>
 
@@ -83,6 +77,8 @@ All functionality and development of this project were managed using Jira Softwa
 
 [Get Ducked - USER STORIES](https://getducked.atlassian.net/jira/software/projects/GD/boards/1)
 
+Assessors can log in using the details provided on the submission form.
+
 ### Site Goals
 
 * To provide user with a space to search for rubber-ducked themed products
@@ -106,7 +102,9 @@ All functionality and development of this project were managed using Jira Softwa
 * User Sign Up and Log in/Out
 * Custom 404 & 500 error pages for good user experience
 * Secure checkout
+* Contact Page
 * Feedback/Reviews page
+* User Wishlist 
 
 
 ## The Structure Plane
@@ -122,13 +120,68 @@ All functionality and development of this project were managed using Jira Softwa
 
 ## Wireframes 
 
-****** TO DO ******
-
 I used [Balsamiq](https://balsamiq.cloud/) to create low fidelity wireframes which helped me to stay on track during the development process.
 
 Some modifications were made to the initial design during the development process based on user feedback and continuous testing.
 
-**WIREFRAMES TO GO HERE**
+<br>
+
+<details>
+<summary>Home Page Wireframes for Mobile, Tablet and Desktop</summary>
+<br>
+
+![Homepage Wireframes](docs/wireframes/homepage.png)
+</details>
+
+<br>
+
+<details>
+<summary>Alternative Navbar Wireframes for Mobile, Tablet and Desktop</summary>
+<br>
+
+![Dropdown Menu Options - Wireframes](docs/wireframes/dropdown-menu-options.png)
+</details>
+
+<br>
+
+<details>
+<summary>Products Page Wireframes for Mobile, Tablet and Desktop</summary>
+<br>
+
+![Products Page Wireframes](docs/wireframes/products-page.png)
+</details>
+
+<br>
+
+<details>
+<summary>Product Details Wireframes for Mobile, Tablet and Desktop</summary>
+<br>
+
+![Product Detail Wireframes](docs/wireframes/product-detail.png)
+</details>
+
+<br>
+
+<details>
+<summary>Shopping Bag Wireframes for Mobile, Tablet and Desktop</summary>
+<br>
+
+![Shopping Bag Wireframes](docs/wireframes/shopping-bag.png)
+    
+</details>
+
+<br>
+
+<details>
+<summary>Checkout Wireframes for Mobile, Tablet and Desktop</summary>
+<br>
+
+![Checkout Wireframes](docs/wireframes/checkout.png)
+    
+</details>
+
+<br>
+
 
 ## The Surface Plane
 
@@ -161,6 +214,41 @@ I also sourced a noimage file, in the event that the server cannot find the corr
 ![noimage](docs/images/noimage.png)
 
 Background-image:  Photo by Snack Toronto: https://www.pexels.com/photo/yellow-steel-bathtub-1630344/
+
+## Ecommerce Business Model
+
+Get Ducked is a business to consumer (B2C) ecommerce site for users to find and purchase rubber ducks and rubber-duck themed gifts. 
+
+Users can register for an account, select products to purchase and complete their order through a secure checkout.  
+Returning users can log into their account, update their information and view their previous order history as well as any items added tot their wishlist.  Users can also subscribe to a newsletter that gives them access to special offers and discounts.
+
+A social media site has been created using Facebook Pages to enhance the websites marketing strategy.  The social media site includes links to the main website, useful information about the store and post relating to new products in stock with teh aim of driving traffic to the website. 
+
+<br>
+
+<details>
+<summary>Social Media Business Page</summary>
+<br>
+
+![Social Media Business Page Screenshot 1 ](docs/images/facebook1.png)
+
+<br>
+
+![Social Media Business Page Screenshot 2 ](docs/images/facebook2.png)
+
+<br>
+
+![Social Media Business Page Screenshot 3 ](docs/images/facebook3.png)
+
+<br>
+
+![Social Media Business Page Screenshot 4 ](docs/images/facebook4.png)
+    
+</details>
+
+<br>
+
+
 
 
 ## Features
@@ -236,12 +324,22 @@ The profile page allows users to update their address information, view a list o
 ![Profile Page](docs/images/profile-page.png)
 
 
-
 ### Other Features
 
-*****TO DO*****
+Other features that have been implemented on the site are as follows:
+
+* Home Page - Includes a button to take you to view all products and a button to take you to see all customer reviews.  There are also three home-page-cards which will navigate you to either all ducks, all jewellery or new arrivals.
+* Products Page - On teh products page there is a sorting tool which allows the user to sort items either by price, rating, name or category.
+* Contact Page - Users are able to complete a contact form which allows them to send a message to the store owner if they would like more information about the products, want to query their order or would like to find a specific product.
+* Reviews - Registered users are able to provide feedback to the store owner and other customers by completing and submitting a review form.  The store owner is able to manage these reviews and can approve, edit or delete where necessary.  Approved reviews will be added to the reviews page for all site-users to see. 
+* Search - Users are able to search for products easily using a keyword search.  The product database will be searched against the product name and description and will return a list of products where the keyword appears. 
+* On site feedback to users - When the user interacts with the site, success, error, warning and information messages are displayed in the form of toast pop-ups providing the user with useful information about their activity, i.e. 'item added to your wishlist', 'your order has been successfully submitted' etc. 
 
 ### Future Features/Development
+
+* Contact Page - Currently the store owner can only access messages sent from customers through the admin panel.   In future sprints functionality will be added onto the website so that store owners can access messages directly from the website and can respond easily to the messages.
+* Functionality will be added to the reviews page in the future to allow the site owner to comment on reviews provided.
+
 
 *****TO DO*****
 
@@ -409,27 +507,11 @@ For more information on how to set up stripe with Django, please refer to the [S
 
 ## Credits
 
-* As this was my first E-Commerce project, I took a lot of inspiration from th [Code Institute's](https://codeinstitute.net/) Boutique Ado walkthrough.  I took inspiration from the models, views and templates to get the skeleton of the project up and running.  I did also add my own custom models for Reviews and Contact and slightly customised the Product model to include a user wishlist.
+* As this was my first E-Commerce project, I took a lot of inspiration from the [Code Institute's](https://codeinstitute.net/) Boutique Ado walkthrough.  I took inspiration from the models, views and templates to get the skeleton of the project up and running.  I did also add my own custom models for Reviews and Contact and slightly customised the Product model to include a user wishlist.
 
 * Inspiration was taken from this [youtube tutorial](https://www.youtube.com/watch?v=OgA0TTKAtqQ) to create the wishlist functionality.
 
 * Inspiration was also taken from this [youtube tutorial](https://www.youtube.com/watch?v=Zkmu93lMLPs&t=0s) to create the reviews app.
 
 
-**NOTES FOR ME**
-
-
-TO DO:
-SO MUCH!!!
-
-- 'Are you sure you want to delete { product.name }' popup to prevent accidental product deletion
-- Update Jira Board
- - testing?
-
-
-For Readme:-
-Entity-Relationship Diagram
-Flow diagram
-Testing
-
-
+### Acknowledgements

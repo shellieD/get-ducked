@@ -100,6 +100,16 @@ a.text-primary:hover {
     color: #ffc107;
 }
 
+.red {
+    background: #ff1c19;
+    color: white !important;
+}
+
+.red:hover {
+    background: #de0804ee;
+    color: white !important;
+}
+
 .text-black {
     color: #000 !important;
 }
