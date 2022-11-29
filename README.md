@@ -248,9 +248,6 @@ A social media site has been created using Facebook Pages to enhance the website
 
 <br>
 
-
-
-
 ## Features
 
 ### Navigation Bar
@@ -337,21 +334,42 @@ Other features that have been implemented on the site are as follows:
 
 ### Future Features/Development
 
+In addition to investigating and rectifying the above known bugs, I would also make the below enhancements to the store in the future if it were to go live.
+
 * Contact Page - Currently the store owner can only access messages sent from customers through the admin panel.   In future sprints functionality will be added onto the website so that store owners can access messages directly from the website and can respond easily to the messages.
 * Functionality will be added to the reviews page in the future to allow the site owner to comment on reviews provided.
+* At the moment, customers are able to leave a review on the website, however I would like to refactor this later so users can also review a specific product and the rating of the product will be dynamically updated depending on customer reviews, rather than hard-coded into the product fixtures.
+* I would also like to implement a feature to manage the stock quantity of each product and for site users to be able to see if products are in stock or not, and if not, to be notified when an item is back in stock. 
+* I would also like to make changes to the user profile and allow users to store multiple shipping addresses, store card details and delete their profile permanently.
 
-
-*****TO DO*****
 
 ## Testing
 
-Testing has taken place continuously throughout the development of the website. Each view was tested regularly using print statements to ensure the expected outcome was achieved. When the outcome produced was not as expected, debugging was undertaken at that point. I have detailed below some of the bugs that have been resolved and some that remain (due to time constraints/knowledge gaps).
+Testing has taken place continuously throughout the development of the website. Each view was tested regularly using print statements to ensure the expected outcome was achieved. When the outcome produced was not as expected, debugging was undertaken at that point. I have detailed below some known issues which are due to be investigated further in the next sprint (unfortunately due to time constraints these were not fixable in this sprint).
 
 All testing and code validation information can be found in the separate [TESTING.md](TESTING.md) file
 
-* BUG - unable to close toasts with close button.... need to figure out a workaround - sporadic behaviour, sometimes works, sometimes doesn't
+TOASTS
+* BUG - Whilst the majority of the pop-up toast messages work as expected, there are instances where the toasts cannot be closed using the 'x' icon.  This appears to be predominately when on the shopping bag page but unfortunately I have not been able to easily identify why this is happening.  As this is not a breaking bug, and is just mildly annoying, I felt it was more important to focus on ensuring I had included all functionality to match the assessment criteria and hopefully explore this issue prior to submission if time allowed.  Unfortunately this has not been the case and so this will be explored further in future sprints.  
 
+In addition to this, I have noticed that if a registered user complete and submits either a contact OR review form OR adds/removes a product from their wishlist AND the user has items in their shopping bag, then the toast success message will render the items of the shopping bag at the bottom of the toast.  Ideally this should only happen when adding items to the shopping bag, but as I did not discover this until manually testing the deployed site there was not enough time to rectify this.  This is really quite a minor bug and doesn't effect the user interaction with the website, it just isn't ideal.  Screenshot below for context:
+
+Adding item to wishlist and items in shopping bag showing on toast
+
+![Adding item to wishlist and items in shopping bag showing on toast](docs/images/toast-error.png)
+
+QUANTITY FORM ON CHECKOUT PAGE
 * BUG - Increment and decrement quantity buttons not disabling correctly on larger screens.  This is due to two quantity forms being rendered and one being hidden depending on the size of the screen. Unfortunately due to time constraints I was unable to fix this prior to submission as my focus had to be on including all functionality to match the assessment criteria.  This problem however, is not a breaking-bug... If the user selects a quantity of a product of any number below zero, then no items will be added to the bag.  It does however mean that users can add far more of a product to the bag than would be ideal, so this is something that will need to be rectified in the next sprint.
+
+ORDER CONFIRMATION EMAILS/WEBHOOKS
+* BUG - During the testing process I noticed that duplicate orders were being created and showing in the user profile and the on the admin dashboard.  On further inspection it appeared to be an issue that the orders were being created by the webhooks and I suspect it was due to Stripe having endpoints for both the Gitpod workspace and the deployed heroku site.  To rectify this, I disabled the Gitpod endpoints, but as the function for sending an order confirmation email to the customer was only in the webhook handler, the customer does not now receive an order confirmation email.  Due to to the fact that the customer is redirected to an order confirmation page, a toast pop up with a success message is displayed on the screen to confirm the order and the order history also shows up in the users profile, I have decided to investigate and rectify this in a future sprint.
+
+IMPROVEMENTS 
+* I am aware that I have not used images in .webp format and have instead used .png and this has had an effect on the overall performance of the site which can be seen in the lighthouse tests.  Converting the images would have been a time-consuming task, so I have therefore  left this for now with a view to convert and update the images in the future when necessary.  I also am aware that the quality of some of the images is not desirable and does not give the best user experience, I believe this is due to the fact that they are screenshots from other websites and if this were a real website then the images would be provided by the store owner and would be of a sufficient quality and format for displaying on a website.  Had I had the benefit of more time to invest in this project I would have dedicated more of it to sourcing better quality images.
+
+* I also need to implement safety netting so that when Admin clicks a delete product button, they are first taken to a confirmation page to confirm they want to actually delete the product.  Buttons can be pressed accidentally and so this is something that really should be implemented sooner rather than later, but I seem to have overlooked this during the planning and implementation phase of this project.
+
+* During the testing process I noted that I was able to upload a .gif to the image field when adding a product.  This should be handled more gracefully and an error message should appear to the user advising that only image files can be uploaded.  Something to rectify on the next sprint. 
 
 ## Technologies Used
 
@@ -397,9 +415,8 @@ All testing and code validation information can be found in the separate [TESTIN
 * Git: Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 * GitHub: GitHub is used to store the project's code after being pushed from Git.
 * Google Fonts: Google fonts are used to add fonts for aesthetic and UX purposes.
-* Multi Device Website Mockup Generator: Used to generate mockup image.
+* Am I Responsive: Used to generate mockup image.
 * DrawSQL.app was used to develop the database schema during development.
-* Lucidcharts was used to created a flow chart.
 * Tinypng
 * JPG to WEBP | Cloudconvert
 * AWS S3 buckets were used to host media and static files
