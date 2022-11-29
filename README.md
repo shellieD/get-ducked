@@ -43,7 +43,7 @@ NAVIGATION
 
 REGISTRATION/USER PROFILE
 * I can register for an account using my username, email and password.
-* I will receive a confirmation email after registering for an account so that I can be sure my order has been received.
+* I will receive an email after registering for an account to confirm my email address.
 * I can log in and out of my account easily to enable me to access/update my personal information.
 * I can access my account to view details of my order history.
 * I can reset my password regularly to keep my information safe.
@@ -53,7 +53,7 @@ REGISTRATION/USER PROFILE
 CHECKOUT
 * I can add multiple products to my basket and and see the total price of all items at a glance so I can keep tracks on how much I am spending.
 * I can modify the items in my basket easily before checking out.
-* I can pay for the items in my basket with the knowledge that my transaction details will be kept secure.
+* I can pay for the items in my basket safe in the knowledge that my transaction details will be kept secure.
 * I will receive a confirmation email when I have made a purchase so I know my order was successful.
 
 OTHER
@@ -81,7 +81,7 @@ Assessors can log in using the details provided on the submission form.
 
 ### Site Goals
 
-* To provide user with a space to search for rubber-ducked themed products
+* To provide user with a space to search for rubber-ducked themed gifts and products
 * To provide users with a visually pleasing website that is intuitive to use and easy to navigate
 * To provide a website where the purpose is immediately clear
 * To provide role-based permissions that allows users to:
@@ -205,7 +205,9 @@ Only one font is used throughout the website, sourced from [Google Fonts](https:
 
 For the landing page I used an image sourced from [Pexels](https://www.pexels.com/) of a yellow bathtub surrounded by yellow rubber ducks with some ladies legs sticking out of the bath.  It is brightly coloured and adds an element of fun to the website.
 
-All products were sourced from either Amazon, or were pulled from the website [shop4ducks.co.uk](https://www.shop4ducks.co.uk/) <--(great if you're actually looking to buy some rubber ducks!!) and whilst I didn't have explicit permissions to use the images as this website is for educational purposes only and will not be used for profit, I deemed this was acceptable and will credit accordingly at the bottom of this documentation. **CHECK WITH MENTOR THAT THIS IS OK** 
+Background-image:  Photo by Snack Toronto: https://www.pexels.com/photo/yellow-steel-bathtub-1630344/
+
+All products were sourced from either Amazon or were pulled from the website [shop4ducks.co.uk](https://www.shop4ducks.co.uk/) <--(great if you're actually looking to buy some rubber ducks!!) and whilst I didn't have explicit permissions to use the images, as this website is for educational purposes only and will not be used for profit, I deemed this was acceptable and will credit accordingly at the bottom of this documentation.
 
 ![Background Image](docs/images/background.jpg)
 
@@ -213,16 +215,14 @@ I also sourced a noimage file, in the event that the server cannot find the corr
 
 ![noimage](docs/images/noimage.png)
 
-Background-image:  Photo by Snack Toronto: https://www.pexels.com/photo/yellow-steel-bathtub-1630344/
-
 ## Ecommerce Business Model
 
 Get Ducked is a business to consumer (B2C) ecommerce site for users to find and purchase rubber ducks and rubber-duck themed gifts. 
 
 Users can register for an account, select products to purchase and complete their order through a secure checkout.  
-Returning users can log into their account, update their information and view their previous order history as well as any items added tot their wishlist.  Users can also subscribe to a newsletter that gives them access to special offers and discounts.
+Returning users can log into their account, update their information and view their previous order history as well as any items added to their wishlist.  Users can also subscribe to a newsletter that gives them access to special offers and discounts.
 
-A social media site has been created using Facebook Pages to enhance the websites marketing strategy.  The social media site includes links to the main website, useful information about the store and post relating to new products in stock with teh aim of driving traffic to the website. 
+A social media site has been created using Facebook Pages to enhance the websites marketing strategy.  The social media site includes links to the main website, useful information about the store and post relating to new products in stock with the aim of driving traffic to the website. 
 
 <br>
 
@@ -282,7 +282,7 @@ Registered and logged in users will see the following:
 
 ![Logged in User Menu](docs/images/user-logged-in.png)
 
-and Admin will have options that allow them to manage the store's products and review, approve, edit or delete customer reviews:
+and Admin will have options that allow them to manage the products and review, approve, edit or delete customer reviews:
 
 ![Logged in as Admin](docs/images/admin-logged-in.png)
 
@@ -302,7 +302,7 @@ The footer appears on every page and gives users plenty of opportunities to conn
 
 ### Product Detail & Wishlist
 
-When a user clicks on a product card, they are taken to the product detail view where they can see more details of the product they are interested in.  The product detail page show the name, price category, rating and a description of the product.  
+When a user clicks on a product card, they are taken to the product detail view where they can see more details of the product they are interested in.  The product detail page shows the name, price category, rating and a description of the product.  
 
 It also displays a quantity form, so users can increment or decrement the quantity of the item they are wishing to purchase. 
 
@@ -334,13 +334,13 @@ Other features that have been implemented on the site are as follows:
 
 ### Future Features/Development
 
-In addition to investigating and rectifying the above known bugs, I would also make the below enhancements to the store in the future if it were to go live.
+Below are some enhancements I would make to the store in the future if it were to go live.
 
 * Contact Page - Currently the store owner can only access messages sent from customers through the admin panel.   In future sprints functionality will be added onto the website so that store owners can access messages directly from the website and can respond easily to the messages.
 * Functionality will be added to the reviews page in the future to allow the site owner to comment on reviews provided.
 * At the moment, customers are able to leave a review on the website, however I would like to refactor this later so users can also review a specific product and the rating of the product will be dynamically updated depending on customer reviews, rather than hard-coded into the product fixtures.
 * I would also like to implement a feature to manage the stock quantity of each product and for site users to be able to see if products are in stock or not, and if not, to be notified when an item is back in stock. 
-* I would also like to make changes to the user profile and allow users to store multiple shipping addresses, store card details and delete their profile permanently.
+* I would also like to make changes to the user profile and allow users to store multiple shipping addresses, store card details and delete their profile permanently.  
 
 
 ## Testing
@@ -349,10 +349,12 @@ Testing has taken place continuously throughout the development of the website. 
 
 All testing and code validation information can be found in the separate [TESTING.md](TESTING.md) file
 
+### Bugs/Known Issues
+
 TOASTS
 * BUG - Whilst the majority of the pop-up toast messages work as expected, there are instances where the toasts cannot be closed using the 'x' icon.  This appears to be predominately when on the shopping bag page but unfortunately I have not been able to easily identify why this is happening.  As this is not a breaking bug, and is just mildly annoying, I felt it was more important to focus on ensuring I had included all functionality to match the assessment criteria and hopefully explore this issue prior to submission if time allowed.  Unfortunately this has not been the case and so this will be explored further in future sprints.  
 
-In addition to this, I have noticed that if a registered user complete and submits either a contact OR review form OR adds/removes a product from their wishlist AND the user has items in their shopping bag, then the toast success message will render the items of the shopping bag at the bottom of the toast.  Ideally this should only happen when adding items to the shopping bag, but as I did not discover this until manually testing the deployed site there was not enough time to rectify this.  This is really quite a minor bug and doesn't effect the user interaction with the website, it just isn't ideal.  Screenshot below for context:
+In addition to this, I have noticed that if a registered user completes and submits either a contact OR review form OR adds/removes a product from their wishlist AND the user has items in their shopping bag, then the toast success message will render the items of the shopping bag at the bottom of the toast.  Ideally this should only happen when adding items to the shopping bag, but as I did not discover this until manually testing the deployed site there was not enough time to rectify this.  This is really quite a minor bug and doesn't effect the user interaction with the website, it just isn't ideal.  Screenshot below for context:
 
 Adding item to wishlist and items in shopping bag showing on toast
 
@@ -362,12 +364,12 @@ QUANTITY FORM ON CHECKOUT PAGE
 * BUG - Increment and decrement quantity buttons not disabling correctly on larger screens.  This is due to two quantity forms being rendered and one being hidden depending on the size of the screen. Unfortunately due to time constraints I was unable to fix this prior to submission as my focus had to be on including all functionality to match the assessment criteria.  This problem however, is not a breaking-bug... If the user selects a quantity of a product of any number below zero, then no items will be added to the bag.  It does however mean that users can add far more of a product to the bag than would be ideal, so this is something that will need to be rectified in the next sprint.
 
 ORDER CONFIRMATION EMAILS/WEBHOOKS
-* BUG - During the testing process I noticed that duplicate orders were being created and showing in the user profile and the on the admin dashboard.  On further inspection it appeared to be an issue that the orders were being created by the webhooks and I suspect it was due to Stripe having endpoints for both the Gitpod workspace and the deployed heroku site.  To rectify this, I disabled the Gitpod endpoints, but as the function for sending an order confirmation email to the customer was only in the webhook handler, the customer does not now receive an order confirmation email.  Due to to the fact that the customer is redirected to an order confirmation page, a toast pop up with a success message is displayed on the screen to confirm the order and the order history also shows up in the users profile, I have decided to investigate and rectify this in a future sprint.
+* BUG - During the testing process I noticed that duplicate orders were being created and showing in the user profile and the on the admin dashboard.  On further inspection it appeared that the orders were being created by the webhooks and I suspect it was due to Stripe having endpoints for both the Gitpod workspace and the deployed heroku site.  To rectify this, I disabled the Gitpod endpoints, but as the function for sending an order confirmation email to the customer was only in the webhook handler, the customer does not now receive an order confirmation email.  Due to to the fact that the customer is redirected to an order confirmation page, a toast pop up with a success message is displayed on the screen to confirm the order and the order history also shows up in the users profile, I have decided to investigate and rectify this in a future sprint.
 
 IMPROVEMENTS 
 * I am aware that I have not used images in .webp format and have instead used .png and this has had an effect on the overall performance of the site which can be seen in the lighthouse tests.  Converting the images would have been a time-consuming task, so I have therefore  left this for now with a view to convert and update the images in the future when necessary.  I also am aware that the quality of some of the images is not desirable and does not give the best user experience, I believe this is due to the fact that they are screenshots from other websites and if this were a real website then the images would be provided by the store owner and would be of a sufficient quality and format for displaying on a website.  Had I had the benefit of more time to invest in this project I would have dedicated more of it to sourcing better quality images.
 
-* I also need to implement safety netting so that when Admin clicks a delete product button, they are first taken to a confirmation page to confirm they want to actually delete the product.  Buttons can be pressed accidentally and so this is something that really should be implemented sooner rather than later, but I seem to have overlooked this during the planning and implementation phase of this project.
+* I also need to implement safety netting so that when Admin clicks a delete product button, they are first taken to a confirmation page to confirm they want to actually delete the product.  Buttons can be pressed accidentally and so this is something that really should be implemented sooner rather than later, but I seem to have overlooked this during the planning and implementation phase of this project.  Similar functionality however, has been implemented for customer reviews.
 
 * During the testing process I noted that I was able to upload a .gif to the image field when adding a product.  This should be handled more gracefully and an error message should appear to the user advising that only image files can be uploaded.  Something to rectify on the next sprint. 
 

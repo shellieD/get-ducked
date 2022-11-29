@@ -14,7 +14,6 @@ The full testing schedule report can be found [here](docs/testing/testing-schedu
 
 Python testing was conducted using the pycodestyle linter which was installed into the gitpod workspace.  A few errors were raised in the settings file, however these were related to default django authorisation code and could not be changed to remove the errors.
 
-
 ### Test Case 001a
 ![Test Case 001a](docs/testing/javascript-validation.png)
 
@@ -88,8 +87,6 @@ Site Admin/SuperUsers are able to review, add, edit and delete both products and
 1. When adding a product admin can upload other doctypes into the image field.  I would need to get this handled correctly to ensure that only images are able to be uploaded.
 2. I noticed that there was no toast popup to confirm that a product had been deleted and to remain consistent across the site, this should be implemented.
 3. When Admin chooses to delete a product, they are not taken to a confirmation page to double check that they want to delete the item.  This should be implemented as soon as possible as accidents can happen and buttons can be pressed in error causing the site admin extra work to re-add products if erroneously deleted.
-
-
 
 
 ### Wave Webaim Accessibility Report
