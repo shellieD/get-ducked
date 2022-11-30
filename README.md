@@ -531,7 +531,7 @@ For more information on how to set up stripe with Django, please refer to the [S
 * Inspiration was also taken from this [youtube tutorial](https://www.youtube.com/watch?v=Zkmu93lMLPs&t=0s) to create the reviews app.
 
 
-### Acknowledgements
+### Acknowledgements
 
 Huge thanks go to my fellow students who have been on hand to give me advice, support and encouragement through the development of this project. 
 Shout out to the tutors at Code Institute who helped point me in the right direction when I was suffering from code-blindness!
