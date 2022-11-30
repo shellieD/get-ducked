@@ -75,7 +75,7 @@ OTHER
 
 All functionality and development of this project were managed using Jira Software Kanban Board which can be found here:
 
-[Get Ducked - USER STORIES](https://getducked.atlassian.net/jira/software/projects/GD/boards/1)
+[Get Ducked - USER STORIES](https://getducked.atlassian.net/jira/projects)
 
 Assessors can log in using the details provided on the submission form.
 
@@ -109,8 +109,6 @@ Assessors can log in using the details provided on the submission form.
 
 ## The Structure Plane
 <hr>
-
-## Functional Scope
 
 ## Database Schema
 
@@ -534,3 +532,8 @@ For more information on how to set up stripe with Django, please refer to the [S
 
 
 ### Acknowledgements
+
+Huge thanks go to my fellow students who have been on hand to give me advice, support and encouragement through the development of this project. 
+Shout out to the tutors at Code Institute who helped point me in the right direction when I was suffering from code-blindness!
+Massive thanks to my Mentor Brian O'Hare for his advice and encouragement.
+My family for being so patient whilst I spent many hours at my desk!
